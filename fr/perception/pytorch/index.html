@@ -1,0 +1,599 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Torch · ROS4PRO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../keras/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Qu'est-ce que c'est ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../introduction/">
+            
+                <a href="../../introduction/">
+            
+                    
+                    I. Introduction à Linux et ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    II. Navigation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../navigation/turtlebot/">
+            
+                <a href="../../navigation/turtlebot/">
+            
+                    
+                    Turtlebot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    III. Manipulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../manipulation/edo/">
+            
+                <a href="../../manipulation/edo/">
+            
+                    
+                    E.DO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../manipulation/ergo-jr/">
+            
+                <a href="../../manipulation/ergo-jr/">
+            
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../manipulation/sawyer/">
+            
+                <a href="../../manipulation/sawyer/">
+            
+                    
+                    Sawyer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../manipulation/ur/README.md">
+            
+                <span>
+            
+                    
+                    Universal Robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    IV. Perception
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../opencv/">
+            
+                <a href="../opencv/">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../keras/">
+            
+                <a href="../keras/">
+            
+                    
+                    Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Torch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    V. Intégration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../integration/ergo-tb-keras/">
+            
+                <a href="../../integration/ergo-tb-keras/">
+            
+                    
+                    Poppy Ergo Jr + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../integration/sawyer-tb-keras/">
+            
+                <a href="../../integration/sawyer-tb-keras/">
+            
+                    
+                    Sawyer + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../theory/">
+            
+                <a href="../../theory/">
+            
+                    
+                    VI. Robotique théorique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    VII. Simulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../simulation/gazebo/">
+            
+                <a href="../../simulation/gazebo/">
+            
+                    
+                    Gazebo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Foires aux Questions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../faq/pi/">
+            
+                <a href="../../faq/pi/">
+            
+                    
+                    FAQ robots basés sur Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Torch</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="iv-perception-avec-torch-pytorch">IV. Perception avec Torch (PyTorch)</h1>
+<p>Torch est une bilbioth&#xE8;que opensource d&apos;apprentissage machine et en particulier d&apos;apprentissage profond. Depuis 2018 seule sa version Python nomm&#xE9;e PyTorch est maintenue. Nous allons l&apos;utiliser ici sur des imagettes sur lesquelles sont inscrites des chiffres marqu&#xE9;s manuellement au feutre avec diff&#xE9;rentes calligraphies. Le r&#xE9;seau de neurones que vous allez cr&#xE9;er devra apprendre lui-m&#xEA;me &#xE0; d&#xE9;terminer quel chiffre est marqu&#xE9;, ce que l&apos;on appelle <strong>classifier</strong>. </p>
+<h2 id="0-installation">0. Installation</h2>
+<p>Pour effectuer cet atelier, vous devez installer quelques packages :</p>
+<pre><code>pip install torch==1.3.1+cpu torchvision==0.4.2+cpu -f https://download.pytorch.org/whl/torch_stable.html
+pip install scikit-image imageio
+git clone https://gitlab.inria.fr/apere/ros_workshop.git &amp;&amp; git checkout e78f295b6
+</code></pre><h2 id="1-documentation">1. Documentation</h2>
+<p>Pour remplir ce code, vous aurez besoin de consulter plusieurs documentations. De mani&#xE8;re g&#xE9;n&#xE9;rale, vous aurez besoin de numpy. Si vous n&apos;&#xEA;tes pas familier avec, vous pouvez consulter :</p>
+<ul>
+<li><a href="https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf" target="_blank">Numpy cheatsheet</a></li>
+<li><a href="https://numpy.org/devdocs/user/quickstart.html" target="_blank">Numpy Documentation</a>
+Pour la partie d&#xE9;tection et pr&#xE9;-processing, nous utiliserons <code>scikit-image</code>. Vous pouvez vous inspirer des exemples:</li>
+<li><a href="https://scikit-image.org/docs/stable/auto_examples/" target="_blank">Scikit-Image General examples</a>
+Enfin, pour la partie reconnaissance, nous utiliserons <code>pytorch</code>. Vous devriez trouver ce qu&apos;il vous faut dans le tutoriel suivant:</li>
+<li><a href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html" target="_blank">Deep learning with pytorch: a 60 minute blitz</a></li>
+</ul>
+<h2 id="2-partie-reconnaissance-matin">2. Partie reconnaissance (Matin)</h2>
+<h3 id="21-les-donn&#xE9;es-et-le-mod&#xE8;le">2.1 Les donn&#xE9;es et le mod&#xE8;le</h3>
+<p>Commencez par ouvrir le fichier <code>src/models.py</code>. Pour vous familiariser avec les tenseurs, commencez par remplir les fonctions <code>imag_mean</code> et <code>image_std</code>. Quand cela est fait executez le script une premi&#xE8;re fois avec :</p>
+<pre><code>python src/models.py
+</code></pre><p>Quelle est la taille d&apos;un batch de donn&#xE9;es d&apos;entr&#xE9;e ? De donn&#xE9;es de sortie ? </p>
+<p>Quelle est la moyenne du batch d&apos;entr&#xE9;e ? Son &#xE9;cart type ? </p>
+<p>Dans le fichier se trouve une classe <code>LeNet</code> vide, qui contiendra votre mod&#xE8;le. En vous r&#xE9;f&#xE9;rant &#xE0; la documentation de pytorch, remplissez la classe pour d&#xE9;finir l&apos;architecture LeNet vue pendant la pr&#xE9;sentation.</p>
+<p>Attention, la m&#xE9;thode <code>forward</code> prend en entr&#xE9;e un tenseur de taille [128, 1, 28, 28] et doit retourner un tenseur de taille [128, 2]. En revanche, la m&#xE9;thode infer doit retourner le label (<code>1</code> ou <code>2</code>) trouv&#xE9; par le r&#xE9;seau de neurones pour une image, soit un simple float.</p>
+<p>Une fois le r&#xE9;seau d&#xE9;fini, r&#xE9;-ex&#xE9;cutez le script. Si votre r&#xE9;seau est bien d&#xE9;fini, il devrait &#xEA;tre utilis&#xE9; pour faire une inf&#xE9;rence. </p>
+<p>Les labels trouv&#xE9;s par le r&#xE9;seau de neurones font ils sens ? </p>
+<p>Remplissez la fonction <code>compute_params_count</code>. Ex&#xE9;cutez &#xE0; nouveau; quel est le nombre de param&#xEA;tres du r&#xE9;seau de neurones ? Qu&apos;en pensez vous ? </p>
+<p>Enfin, si tout le script s&apos;ex&#xE9;cute, vous devriez voir s&apos;afficher les noyaux de la premi&#xE8;re couche. Qu&apos;en pensez vous ? </p>
+<h3 id="22-lentrainement">2.2 L&apos;entrainement.</h3>
+<p>Dirigez vous vers le fichier <code>train.py</code>. La fonction <code>perform_train_epoch</code> contient la proc&#xE9;dure d&apos;entrainement. Remplissez-la en suivant la proc&#xE9;dure pr&#xE9;sent&#xE9;e durant la matin&#xE9;e, puis ex&#xE9;cutez le script. </p>
+<p>Si votre algorithme d&apos;entrainement est correctement &#xE9;crit, vous devriez voir les courbes d&apos;apprentissage apparaitre. Que pensez vous de ces courbes ? Que pensez vous du niveau de performance &#xE0; la fin de l&apos;entrainement? </p>
+<p>A la suite de l&apos;entrainement, le script vous pr&#xE9;sente les noyaux de la couche d&apos;entr&#xE9;e du r&#xE9;seau. Qu&apos;en pensez vous ? Ont ils &#xE9;volu&#xE9; par rapport &#xE0; tout &#xE0; l&apos;heure ? </p>
+<p>Enfin, pouvez vous entrainer le mod&#xEA;le pendant suffisament longtemps pour voir la phase d&apos;overfitting appara&#xEE;tre ? </p>
+<h2 id="3-partie-amont-apr&#xE8;s-midi">3. Partie amont (Apr&#xE8;s-midi)</h2>
+<h3 id="31-d&#xE9;tection">3.1 D&#xE9;tection</h3>
+<p>Ex&#xE9;cutez le fichier <code>src/detection.py</code>.  Les donn&#xE9;es sont charg&#xE9;es depuis le disque dans un tableau numpy, dont un example vous est montr&#xE9;. Remplissez la fonction <code>rescale</code> qui permet de r&#xE9;-&#xE9;chelloner les valeurs du tableau entre 0 et 1.</p>
+<p>La premi&#xE8;re &#xE9;tape du pipeline de d&#xE9;tection consiste &#xE0; binariser l&apos;image. Remplissez la fonction <code>binarize</code> et r&#xE9;-ex&#xE9;cutez le code. Observez chacun des exemples. Les chiffres ont ils bien disparus ? Les cubes sont ils couverts chacun par une unique zone blanche? Cette zone blanche est elle proche de la surface du cube ? </p>
+<p>Tant que vous ne pouvez r&#xE9;pondre positivement &#xE0; toutes ces questions (dans la mesure du raisonnable), ameliorez votre programme! Une fois fini, vous pouvez mettre <code>binarize(im, debug=False)</code> pour &#xE9;viter de revoir toutes les images &#xE0; chaque fois.</p>
+<p>Suite &#xE0; cela, nous allons effectuer la recherche des cubes dans l&apos;image. Remplissez la fonction <code>get_box contour</code> et r&#xE9;-ex&#xE9;cutez le code. &#xC0; nouveau, les cubes sont ils bien d&#xE9;tect&#xE9;s ? Tant que votre algorithme ne positionne pas correctement les coins des diff&#xE9;rentes boites de l&apos;image, am&#xE9;liorez-le.</p>
+<p>Encore une fois quand vous aurez termin&#xE9;, d&#xE9;sactivez la visualisation avec <code>get_box_contour(im, debug=False)</code>.</p>
+<h3 id="32-pr&#xE9;-processing">3.2 Pr&#xE9;-processing</h3>
+<p>Nous avons maintenant une fonction <code>get_box_contours</code> qui nous donne, &#xE0; partir d&apos;une image d&apos;entr&#xE9;e, une liste de contours de quadrilat&#xE8;res. Maintenant, il s&apos;ait de transformer ces quaqdrilat&#xE8;res en images de la taille des images de mnist. Pour cela, nous allons calculer une transformation projective pour chacun des cubes. </p>
+<p>Remplissez la fonction <code>get_sprites</code>, puis r&#xE9;-executez le code. Si votre code est correct, vous devriez voir s&apos;afficher des imagettes ressemblant (au moin par la taille) aux images de mnist.</p>
+<p>Une fois cela fait, il ne vous reste plus qu&apos;&#xE0; remplir la fonction <code>preprocess_sprites</code>. Le but de cette fonction est de faire en sorte que les images donn&#xE9;es au r&#xE9;seau de neurones ressemblent le plus possible aux images de l&apos;entrainement. &#xC9;tudiez bien les donn&#xE9;es d&apos;entr&#xE9;e avant de vous mettre au travail (vous aurez peut &#xEA;tre besoin de retourner regarder <code>src/models.py</code> ou de regarder <code>src/misc.py</code>).</p>
+<h2 id="4-final">4. Final</h2>
+<p>Une fois termin&#xE9;, vous pouvez vous rendre dans <code>main.py</code> pour tester l&apos;int&#xE9;gration de tout votre travail. Bravo !
+<div id="page-footer" class="localized-footer"><hr><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cc-by-nc-sa_euro_icon.svg/120px-Cc-by-nc-sa_euro_icon.svg.png" alt="CC-BY-NC-SA"></a></p>
+<h4 id="&#x1F4DA;-auteurs">&#x1F4DA; Auteurs</h4>
+<p>Jessica Colombel (<a href="http://inria.fr/" target="_blank">Inria</a>), R&#xE9;mi Fabre (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Jean-Baptiste Horel (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Yoan Mollard (<a href="https://robot-enseirb-matmeca.fr/" target="_blank">Bordeaux INP</a>), Alexandre P&#xE9;r&#xE9; (<a href="https://flowers.inria.fr" target="_blank">Inria</a>), Steve N&apos;Guyen (<a href="https://www.labri.fr/" target="_blank">LaBRI</a>) .</p>
+<h4 id="&#x1F4AC;-besoin-daide-">&#x1F4AC; Besoin d&apos;aide ?</h4>
+<p>Posez votre question sur le <a href="https://discourse.ros.org/c/local/france/48" target="_blank">forum francophone des utilisateurs de ROS</a>.</p>
+<p>&#x1F4C5;  Derni&#xE8;re mise &#xE0; jour : 2021-01-03T19:14:24+01:00</p>
+<!-- Default to night theme -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" defer>
+$("div").first().addClass("color-theme-2");
+</script></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../keras/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Keras">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Torch","level":"1.5.3","depth":2,"next":{"title":"V. Intégration","level":"1.6","depth":1,"ref":"","articles":[{"title":"Poppy Ergo Jr + Turtlebot + Keras","level":"1.6.1","depth":2,"path":"integration/ergo-tb-keras/README.md","ref":"integration/ergo-tb-keras/README.md","articles":[]},{"title":"Sawyer + Turtlebot + Keras","level":"1.6.2","depth":2,"path":"integration/sawyer-tb-keras/README.md","ref":"integration/sawyer-tb-keras/README.md","articles":[]}]},"previous":{"title":"Keras","level":"1.5.2","depth":2,"path":"perception/keras/README.md","ref":"perception/keras/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-plus","github","anchorjs","build","custom-favicon","language-picker","localized-footer","embed-pdf"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/ros4pro/"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"embed-pdf":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ROS4PRO","language":"fr","gitbook":"*"},"file":{"path":"perception/pytorch/README.md","mtime":"2021-01-03T18:14:24.828Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-03T18:20:09.115Z"},"basePath":"../..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

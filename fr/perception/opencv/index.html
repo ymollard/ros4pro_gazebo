@@ -1,0 +1,748 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>OpenCV · ROS4PRO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../keras/" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Qu'est-ce que c'est ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../introduction/">
+            
+                <a href="../../introduction/">
+            
+                    
+                    I. Introduction à Linux et ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    II. Navigation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../navigation/turtlebot/">
+            
+                <a href="../../navigation/turtlebot/">
+            
+                    
+                    Turtlebot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    III. Manipulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../manipulation/edo/">
+            
+                <a href="../../manipulation/edo/">
+            
+                    
+                    E.DO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../manipulation/ergo-jr/">
+            
+                <a href="../../manipulation/ergo-jr/">
+            
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../manipulation/sawyer/">
+            
+                <a href="../../manipulation/sawyer/">
+            
+                    
+                    Sawyer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../manipulation/ur/README.md">
+            
+                <span>
+            
+                    
+                    Universal Robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    IV. Perception
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../keras/">
+            
+                <a href="../keras/">
+            
+                    
+                    Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../pytorch/">
+            
+                <a href="../pytorch/">
+            
+                    
+                    Torch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    V. Intégration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../integration/ergo-tb-keras/">
+            
+                <a href="../../integration/ergo-tb-keras/">
+            
+                    
+                    Poppy Ergo Jr + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../integration/sawyer-tb-keras/">
+            
+                <a href="../../integration/sawyer-tb-keras/">
+            
+                    
+                    Sawyer + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../theory/">
+            
+                <a href="../../theory/">
+            
+                    
+                    VI. Robotique théorique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    VII. Simulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../simulation/gazebo/">
+            
+                <a href="../../simulation/gazebo/">
+            
+                    
+                    Gazebo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Foires aux Questions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../faq/pi/">
+            
+                <a href="../../faq/pi/">
+            
+                    
+                    FAQ robots basés sur Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >OpenCV</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <ul>
+<li><a href="#orgdf41233">IV. Perception avec OpenCV</a><ul>
+<li><a href="#org134b5d0">Introduction &#xE0; OpenCV</a></li>
+<li><a href="#orge106897">Ouverture d&apos;une image</a></li>
+<li><a href="#orgf888e92">Seuil sur la couleur</a></li>
+<li><a href="#org281dbcf">D&#xE9;tection des cubes</a></li>
+<li><a href="#orga2455b8">Int&#xE9;gration avec ROS</a></li>
+</ul>
+</li>
+</ul>
+<p><a id="orgdf41233"></a></p>
+<h1 id="iv-perception-avec-opencv">IV. Perception avec OpenCV</h1>
+<p>Le domaine de &quot;Computer Vision&quot; (CV, ou vision par ordinateur) est une branche de l&apos;intelligence artificielle, qui traite des techniques permettant d&apos;extraire des informations de &quot;haut niveau&quot; utiles &#xE0; partir d&apos;images. Donc ce domaine d&#xE9;velopp&#xE9; depuis les ann&#xE9;es 60, on retrouve g&#xE9;n&#xE9;ralement des techniques provenant des math&#xE9;matiques, du traitement d&apos;images, des neurosciences, de l&apos;apprentissage artificiel&#x2026; Nous allons ici effleurer ce domaine en nous familiarisant avec <a href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html" target="_blank">OpenCV</a>.</p>
+<p><a id="org134b5d0"></a></p>
+<h2 id="introduction-&#xE0;-opencv">Introduction &#xE0; OpenCV</h2>
+<p>OpenCV est une biblioth&#xE8;que logicielle qui est devenue le &quot;standard&quot; du domaine. Cette biblioth&#xE8;que fournit un &#xE9;norme ensemble de fonctionnalit&#xE9;s et d&apos;algorithmes &#xE0; la pointe de l&apos;&#xE9;tat de l&apos;art. Entre autres sont disponibles:</p>
+<ul>
+<li>Des m&#xE9;canismes d&apos;entr&#xE9;es/sorties des images et flux vid&#xE9;os (cam&#xE9;ras, fichiers&#x2026;)</li>
+<li>Des m&#xE9;canismes de traitement d&apos;images (gestion des formats, couleurs, d&#xE9;formations&#x2026; )</li>
+<li>Des milliers d&apos;algorithmes d&#xE9;velopp&#xE9;s par la communaut&#xE9; et les industriels (reconnaissance d&apos;image, suivi d&apos;objet, vision 3D, apprentissage&#x2026;)</li>
+</ul>
+<p><a id="orge106897"></a></p>
+<h2 id="ouverture-dune-image">Ouverture d&apos;une image</h2>
+<ul>
+<li>T&#xE9;l&#xE9;chargez l&apos;image: <img src="imgs/ergo_cubes.jpg" alt="img"></li>
+<li><p>Cr&#xE9;ez un fichier <code>couleurs.py</code></p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> cv2 <span class="hljs-keyword">as</span> cv
+img = cv.imread(<span class="hljs-string">&apos;ergo_cubes.jpg&apos;</span>)
+</code></pre>
+</li>
+<li><p>Quelle information nous donne <code>print(img.shape)</code> ?</p>
+<p><img src="imgs/canaux.png" alt="img"></p>
+</li>
+<li><p>On peut acc&#xE9;der &#xE0; chaque pixel par indexation du tableau <code>img</code> avec <code>img[LIGNE, COLONNE]</code> (ce qui est tr&#xE8;s inefficace), que repr&#xE9;sente la valeurs donn&#xE9;es par <code>img[170,255]</code> ?</p>
+</li>
+<li>Pour acc&#xE9;der au diff&#xE9;rents canaux de couleur on peut de m&#xEA;me utiliser: <code>img[:,:,CANAL]</code> avec <code>CANAL</code> la couleur voulue.</li>
+<li><p>On peut facilement cr&#xE9;er des r&#xE9;gions d&apos;int&#xE9;r&#xEA;t (ROI) en utilisant les m&#xE9;canismes disponibles dans python:</p>
+<pre><code class="lang-python">roi=img[<span class="hljs-number">140</span>:<span class="hljs-number">225</span>, <span class="hljs-number">210</span>:<span class="hljs-number">310</span>]
+</code></pre>
+</li>
+<li><p>OpenCV offre &#xE9;galement quelques fonctionnalit&#xE9;s pratiques d&apos;interface utilisateur (GUI). Pour afficher une image:</p>
+<pre><code class="lang-python">cv.imshow(<span class="hljs-string">&quot;Mon image&quot;</span>, roi) <span class="hljs-comment">#on donne un nom unique &#xE0; chaque fen&#xEA;tre</span>
+cv.waitKey(<span class="hljs-number">0</span>) <span class="hljs-comment">#permet d&apos;attendre &#xE0; a l&apos;infini</span>
+</code></pre>
+</li>
+<li><p>Enfin, on peut &#xE9;crire les images dans des fichiers:</p>
+<pre><code class="lang-python">cv.imwrite(<span class="hljs-string">&quot;roi.png&quot;</span>, roi)
+</code></pre>
+</li>
+<li><p>Affichez les trois canaux de couleur dans des fen&#xEA;tres diff&#xE9;rentes</p>
+</li>
+</ul>
+<p><a id="orgf888e92"></a></p>
+<h2 id="seuil-sur-la-couleur">Seuil sur la couleur</h2>
+<p>Nous avons vu que les images sont g&#xE9;n&#xE9;ralement repr&#xE9;sent&#xE9;s dans l&apos;espace <code>BGR</code>, ce qui est coh&#xE9;rent avec le fonctionnement du pixel de l&apos;&#xE9;cran (et du capteur), mais moins &#xE9;vidant lorsque l&apos;on souhaite travailler sur les couleurs. Comment par exemple d&#xE9;finir le volume 3D dans l&apos;espace BGR repr&#xE9;sentant le &quot;rose&quot;? C&apos;est pourquoi pour traiter la couleur, il est recommand&#xE9; de convertir l&apos;encodage de l&apos;image dans un autre espace. L&apos;espace le plus couramment utilis&#xE9; est le <a href="https://fr.wikipedia.org/wiki/Teinte_Saturation_Valeur" target="_blank">HSV</a> (Hue, Saturation, Value ou Teinte, Saturation, Valeur).</p>
+<ul>
+<li><p>Pour convertir une image de BGR vers HSV il suffit d&apos;utiliser:</p>
+<pre><code class="lang-python">img_HSV = cv.cvtColor(img, cv.COLOR_BGR2HSV)
+</code></pre>
+<p>On notera que l&apos;espace HSV est encod&#xE9; avec H dans [0, 179], S dans [0,255] et V dans [0,255]</p>
+</li>
+<li><p>On peut ensuite appliquer un seuil avec:</p>
+<pre><code class="lang-python">img_seuil = cv.inRange(img_HSV, (MIN_H, MIN_S, MIN_V), (MAX_H, MAX_S, MAX_V))
+</code></pre>
+<p>Le r&#xE9;sultat de la fonction de seuil <code>inRange</code> est une image binaire</p>
+</li>
+<li><p>Exp&#xE9;rimentez avec les valeurs de seuil pour ne faire appara&#xEE;tre que le cube rouge Note: il est facile de cr&#xE9;er des &quot;trackbars&quot; pour changer en temps r&#xE9;el les valeurs, voir le <a href="https://docs.opencv.org/master/d9/dc8/tutorial_py_trackbar.html" target="_blank">tutoriel</a></p>
+</li>
+</ul>
+<p><a id="org281dbcf"></a></p>
+<h2 id="d&#xE9;tection-des-cubes">D&#xE9;tection des cubes</h2>
+<p>Nous sommes maintenant capable de s&#xE9;lectionner des pixels en fonction de leur couleur, il nous faut encore &quot;regrouper&quot; ces informations afin de d&#xE9;tecter et reconna&#xEE;tre les cubes.</p>
+<ul>
+<li><p>Une m&#xE9;thode simple consiste &#xE0; consid&#xE9;rer que les pixels d&apos;une couleur choisie font partie d&apos;un &quot;blob&quot; (une r&#xE9;gion de pixels voisins) repr&#xE9;sentant le m&#xEA;me objet. Dans l&apos;image binaire r&#xE9;sultat du seuil, il nous suffit de chercher le <code>contour</code> des zones blanches. Pour cela nous allons utiliser la fonction <code>findContours()</code> (voir le <a href="https://docs.opencv.org/3.4/d4/d73/tutorial_py_contours_begin.html" target="_blank">tutoriel</a>)</p>
+<pre><code class="lang-python">imgret, contours, hierarchy = cv.findContours(
+   img_seuil, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+</code></pre>
+<p><code>imgret</code> est la m&#xEA;me image que <code>img_seuil</code> <code>contours</code> est une liste contenant tous les contours trouv&#xE9;s <code>hierarchy</code> contient les informations sur la hi&#xE9;rarchie des contours (les contours &#xE0; l&apos;int&#xE9;rieur des contours)</p>
+</li>
+<li><p>Sur une image &quot;naturelle&quot; (avec du bruit) les contours trouv&#xE9;s seront rarement parfaits. Il est possible de &quot;filtrer&quot; ces contours en ne consid&#xE9;rant par exemple que ceux dons la surface est coh&#xE9;rente avec les objets recherch&#xE9;s (voir le <a href="https://docs.opencv.org/3.4/dd/d49/tutorial_py_contour_features.html" target="_blank">tutoriel</a>)</p>
+</li>
+<li>Parcourez la liste des contours et dessinez les contours dont la surface est comprise entre 2500 et 3500 On utilisera une boucle sur <code>contours</code>, la fonction <code>contourArea()</code> retournant la surface d&apos;un contour, ainsi que la fonction de dessin <code>drawContours()</code> (dessinez sur l&apos;image d&apos;origine)</li>
+<li><p>Une fois le contour du cube trouv&#xE9;, nous pouvons chercher son centre avec la fonction <code>moments()</code> avec une fonction telle que:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trouver_centroid</span><span class="hljs-params">(cnt)</span>:</span>
+    M = cv.moments(cnt)
+    <span class="hljs-keyword">if</span> M[<span class="hljs-string">&apos;m00&apos;</span>] &gt; <span class="hljs-number">0.0</span>:
+       cx = int(M[<span class="hljs-string">&apos;m10&apos;</span>]/M[<span class="hljs-string">&apos;m00&apos;</span>])
+       cy = int(M[<span class="hljs-string">&apos;m01&apos;</span>]/M[<span class="hljs-string">&apos;m00&apos;</span>])
+       <span class="hljs-keyword">return</span> (x, y)
+    <span class="hljs-keyword">else</span>:
+       <span class="hljs-keyword">return</span> (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>)
+</code></pre>
+<p>Nous pouvons ensuite utiliser la position obtenue pour &#xE9;crire un texte:</p>
+<pre><code class="lang-python">cv.putText(img, <span class="hljs-string">&apos;cube&apos;</span>, (x, y), cv.FONT_HERSHEY_SIMPLEX, <span class="hljs-number">1</span>,(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>), <span class="hljs-number">1</span>, cv.LINE_AA)
+</code></pre>
+</li>
+</ul>
+<p><img src="imgs/cube_rouge.png" alt="img"></p>
+<ul>
+<li>Maintenant que nous sommes capable de d&#xE9;tecter un cube d&apos;une couleur, &#xE9;tendez le programme pour d&#xE9;tecter la pr&#xE9;sence et la position des 3 cubes</li>
+</ul>
+<p><a id="orga2455b8"></a></p>
+<h2 id="int&#xE9;gration-avec-ros">Int&#xE9;gration avec ROS</h2>
+<p>Nous allons maintenant int&#xE9;grer cette d&#xE9;tection de cube color&#xE9; &#xE0; ROS en lisant l&apos;image de la cam&#xE9;ra de Ergo Jr simul&#xE9;e par Gazebo.</p>
+<ul>
+<li>On peut visualiser les images avec l&apos;outil <code>rqt_image_view</code>: <code>rosrun rqt_image_view rqt_image_view</code> Les images brutes sont publi&#xE9;es sur le topic: <code>/ergo_jr/camera_ergo/image_raw</code></li>
+<li>Attrapez chacun des cubes et r&#xE9;cup&#xE9;rez des images de la cam&#xE9;ra qui vous servirons &#xE0; v&#xE9;rifier le bon fonctionnement de votre programme pr&#xE9;c&#xE9;dant</li>
+<li><p>Dans votre package ROS cr&#xE9;ez le fichier <code>ros4pro/src/vision.py</code></p>
+<p>```python</p>
+<p>import rospy
+from sensor_msgs.msg import Image
+from std_srvs.srv import Trigger, TriggerResponse
+from cv_bridge import CvBridge
+import cv2 as cv
+import numpy as np</p>
+</li>
+</ul>
+<pre><code>class NodeVision(object):
+    def __init__(self):
+    # Params
+    self.image = None
+    self.debug_img = None
+    self.br = CvBridge() #pour la conversion entre les imags OpenCV et les images ROS
+    # Node cycle rate (in Hz).
+    self.loop_rate = rospy.Rate(10)
+
+    # Pour publier des images pour le debuggage
+    self.img_pub = rospy.Publisher(
+        &apos;/ergo_jr/camera_ergo/debug_img&apos;, Image, queue_size=1)
+
+    # Pour r&#xE9;cup&#xE9;rer les images du robot simul&#xE9;
+    rospy.Subscriber(
+        &apos;/ergo_jr/camera_ergo/image_raw&apos;, Image, self.callback)
+
+    # Cr&#xE9;action d&apos;un service (on utilise le srv standard Trigger)
+    self.service_vision = rospy.Service(
+        &apos;/ergo_jr/cube_detection&apos;, Trigger, self.handle_cube)
+
+    def trouver_cube(self,img):
+    raise NotImplementedError(&quot;Compl&#xE9;tez la partie 2.4 avant d&apos;ex&#xE9;cuter&quot;)
+    # ICI le traitement OpenCV
+
+    # retour du r&#xE9;sultat
+    resp = TriggerResponse()
+    # Si pas de cube
+    # resp.success = False
+    # Sinon
+    # resp.success = True
+    # resp.message=&quot;COULEUR&quot;
+    return resp
+
+    def handle_cube(self, req):
+    #M&#xE9;thode callback qui sera &#xE9;x&#xE9;cut&#xE9;e &#xE0; chaque appel du service
+
+    # retour du r&#xE9;sultat
+    resp = TriggerResponse()
+    resp.success = False
+
+    # uniquement si l&apos;image existe
+    if self.image is not None:
+        imgtmp = self.image.copy()
+        # on appelle la m&#xE9;thode de traitement d&apos;image
+        resp = self.trouver_cube(imgtmp)
+
+    return resp
+
+    def callback(self, msg):
+    #m&#xE9;thode callback qui sera &#xE9;x&#xE9;cut&#xE9;e &#xE0; chaque reception d&apos;un message
+    self.image = self.br.imgmsg_to_cv2(msg, &quot;bgr8&quot;) #On converti l&apos;image ROS en une image OpenCV
+
+    def start(self):
+    rospy.loginfo(&quot;D&#xE9;marage du node vision&quot;)
+
+    while not rospy.is_shutdown():
+
+        if self.image is not None:
+
+        # &#xE9;ventuellement, publication d&apos;une image de d&#xE9;bug, ici une copie de l&apos;image d&apos;origine
+        self.debug_img = self.image.copy()
+        self.img_pub.publish(
+            self.br.cv2_to_imgmsg(self.debug_img, &quot;bgr8&quot;)) #On converti l&apos;image OpenCV en une image ROS
+
+        self.loop_rate.sleep()
+
+
+if __name__ == &apos;__main__&apos;:
+    rospy.init_node(&quot;Vision&quot;)
+    vision = NodeVision()
+    vision.start()
+
+```
+</code></pre><ul>
+<li>&#xC0; partir de ce squelette, int&#xE9;grez votre programme de d&#xE9;tection des cubes color&#xE9;s On notera qu&apos;il est n&#xE9;cessaire d&apos;utiliser <a href="https://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImagesPython" target="_blank">CvBridge()</a> afin de faire le lien entre les images OpenCV et les images ROS. On peut appeler le service cr&#xE9;&#xE9; avec la commande: <code>rosservice call /ergo_jr/cube_detection [TAB]</code></li>
+<li>Dans votre programme de mouvement, utilisez l&apos;appel &#xE0; ce service afin de d&#xE9;tecter la couleur du cube attrap&#xE9; et faites une pile de cube Rouge/Vert/Bleu Modifiez les couleurs dans le fichier launch <code>spawn_cubes.launch</code> pour tester diff&#xE9;rentes combinaisons
+<div id="page-footer" class="localized-footer"><hr><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cc-by-nc-sa_euro_icon.svg/120px-Cc-by-nc-sa_euro_icon.svg.png" alt="CC-BY-NC-SA"></a></p>
+<h4 id="&#x1F4DA;-auteurs">&#x1F4DA; Auteurs</h4>
+<p>Jessica Colombel (<a href="http://inria.fr/" target="_blank">Inria</a>), R&#xE9;mi Fabre (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Jean-Baptiste Horel (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Yoan Mollard (<a href="https://robot-enseirb-matmeca.fr/" target="_blank">Bordeaux INP</a>), Alexandre P&#xE9;r&#xE9; (<a href="https://flowers.inria.fr" target="_blank">Inria</a>), Steve N&apos;Guyen (<a href="https://www.labri.fr/" target="_blank">LaBRI</a>) .</p>
+<h4 id="&#x1F4AC;-besoin-daide-">&#x1F4AC; Besoin d&apos;aide ?</h4>
+<p>Posez votre question sur le <a href="https://discourse.ros.org/c/local/france/48" target="_blank">forum francophone des utilisateurs de ROS</a>.</p>
+<p>&#x1F4C5;  Derni&#xE8;re mise &#xE0; jour : 2021-01-03T19:14:24+01:00</p>
+<!-- Default to night theme -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" defer>
+$("div").first().addClass("color-theme-2");
+</script></div></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="../keras/" class="navigation navigation-next navigation-unique" aria-label="Next page: Keras">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"OpenCV","level":"1.5.1","depth":2,"next":{"title":"Keras","level":"1.5.2","depth":2,"path":"perception/keras/README.md","ref":"perception/keras/README.md","articles":[]},"previous":{"title":"IV. Perception","level":"1.5","depth":1,"ref":"","articles":[{"title":"OpenCV","level":"1.5.1","depth":2,"path":"perception/opencv/README.md","ref":"perception/opencv/README.md","articles":[]},{"title":"Keras","level":"1.5.2","depth":2,"path":"perception/keras/README.md","ref":"perception/keras/README.md","articles":[]},{"title":"Torch","level":"1.5.3","depth":2,"path":"perception/pytorch/README.md","ref":"perception/pytorch/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","search-plus","github","anchorjs","build","custom-favicon","language-picker","localized-footer","embed-pdf"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/ros4pro/"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"embed-pdf":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ROS4PRO","language":"fr","gitbook":"*"},"file":{"path":"perception/opencv/README.md","mtime":"2021-01-03T18:14:24.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-03T18:20:09.115Z"},"basePath":"../..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

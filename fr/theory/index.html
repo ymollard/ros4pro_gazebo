@@ -1,0 +1,588 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>VI. Robotique théorique · ROS4PRO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../integration/sawyer-tb-keras/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Qu'est-ce que c'est ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introduction/">
+            
+                <a href="../introduction/">
+            
+                    
+                    I. Introduction à Linux et ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    II. Navigation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../navigation/turtlebot/">
+            
+                <a href="../navigation/turtlebot/">
+            
+                    
+                    Turtlebot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    III. Manipulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../manipulation/edo/">
+            
+                <a href="../manipulation/edo/">
+            
+                    
+                    E.DO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../manipulation/ergo-jr/">
+            
+                <a href="../manipulation/ergo-jr/">
+            
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../manipulation/sawyer/">
+            
+                <a href="../manipulation/sawyer/">
+            
+                    
+                    Sawyer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../manipulation/ur/README.md">
+            
+                <span>
+            
+                    
+                    Universal Robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    IV. Perception
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../perception/opencv/">
+            
+                <a href="../perception/opencv/">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../perception/keras/">
+            
+                <a href="../perception/keras/">
+            
+                    
+                    Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../perception/pytorch/">
+            
+                <a href="../perception/pytorch/">
+            
+                    
+                    Torch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    V. Intégration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../integration/ergo-tb-keras/">
+            
+                <a href="../integration/ergo-tb-keras/">
+            
+                    
+                    Poppy Ergo Jr + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../integration/sawyer-tb-keras/">
+            
+                <a href="../integration/sawyer-tb-keras/">
+            
+                    
+                    Sawyer + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    VI. Robotique théorique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    VII. Simulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../simulation/gazebo/">
+            
+                <a href="../simulation/gazebo/">
+            
+                    
+                    Gazebo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Foires aux Questions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../faq/pi/">
+            
+                <a href="../faq/pi/">
+            
+                    
+                    FAQ robots basés sur Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >VI. Robotique théorique</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="robotique-th&#xE9;orique">Robotique th&#xE9;orique</h1>
+<p>Ce cours et TP aborde les notions de base des concepts th&#xE9;oriques sous-jacents &#xE0; la robotique : les mod&#xE8;les g&#xE9;om&#xE9;triques direct et indirect, ainsi que les probablit&#xE9;s appliqu&#xE9;es aux filtres en traitement du signal.</p>
+<h2 id="pr&#xE9;requis">Pr&#xE9;requis</h2>
+<ul>
+<li>G&#xE9;om&#xE9;trie et trigonom&#xE9;trie</li>
+<li>BAC+2 et sup&#xE9;rieur voire options scientifiques des lyc&#xE9;es</li>
+</ul>
+<h2 id="diapositives">Diapositives</h2>
+<p><div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="https://files.ros4.pro/theorie.pdf">View PDF</a></div>
+                
+                                <object data="https://files.ros4.pro/theorie.pdf" width="100%" height="565px" type="application/pdf">
+                                    <embed src="https://files.ros4.pro/theorie.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="https://files.ros4.pro/theorie.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></p>
+<h2 id="travaux-pratiques">Travaux pratiques</h2>
+<h3 id="mod&#xE8;le-g&#xE9;om&#xE9;trique-direct">Mod&#xE8;le g&#xE9;om&#xE9;trique direct</h3>
+<p>Lancez la commande <code>roslaunch ros4pro_robotique_theorique scara_fake_direct.launch</code> pour lancer une <em>simu</em> de SCARA. Une fen&#xEA;tre avec des sliders permet de bouger le bras.</p>
+<p>Modifiez le script <code>src/geometrique_direct.py</code> en y mettant votre mod&#xE8;le g&#xE9;om&#xE9;trique direct. Il calcul la position de l&apos;effecteur &#xE0; partir des angles des articulations.</p>
+<p>Lancez la coommande <code>rosrun ros4pro_robotique_theorique geometrique_direct.py</code> pour ex&#xE9;cuter le script de test du mod&#xE8;le g&#xE9;om&#xE9;trique direct.</p>
+<h3 id="mod&#xE8;le-g&#xE9;om&#xE9;trique-indirect">Mod&#xE8;le g&#xE9;om&#xE9;trique indirect</h3>
+<p>Lancez la commande <code>roslaunch ros4pro_robotique_theorique scara_fake_inverse.launch</code> pour lancer une <em>simu</em> de SCARA.</p>
+<p>Modifiez le script <code>src/geometrique_inverse.py</code> en y mettant votre mod&#xE8;le g&#xE9;om&#xE9;trique inverse. Il calcul les angles et la position des articulations pour que l&apos;effecteur sooit &#xE0; la position voulue.</p>
+<p>Lancez la coommande <code>rosrun ros4pro_robotique_theorique geometrique_inverse.py</code> pour ex&#xE9;cuter le script de test du mod&#xE8;le g&#xE9;om&#xE9;trique inverse.</p>
+<h3 id="probabilit&#xE9;s-robotiques">Probabilit&#xE9;s robotiques</h3>
+<p>Installez les biblioth&#xE8;ques n&#xE9;cessaires &#xE0; l&apos;ex&#xE9;cution des d&#xE9;monstrations de probabilit&#xE9; pour la robotiique, dans un terminal ex&#xE9;cutez les coommandes suivantes :</p>
+<pre><code>sudo apt install python3-pip
+pip3 install matplotlib scipy
+python3 histogram_filter.py
+</code></pre><p>Pour lancer les d&#xE9;monstrations de probabilit&#xE9; allez dans le dossier <code>proba</code> et utilisez <code>python3</code> pour ex&#xE9;cuter les fichiers, ex: <code>python3 extended_kalman_filter.py</code>.</p>
+<p><div id="page-footer" class="localized-footer"><hr><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cc-by-nc-sa_euro_icon.svg/120px-Cc-by-nc-sa_euro_icon.svg.png" alt="CC-BY-NC-SA"></a></p>
+<h4 id="&#x1F4DA;-auteurs">&#x1F4DA; Auteurs</h4>
+<p>Jessica Colombel (<a href="http://inria.fr/" target="_blank">Inria</a>), R&#xE9;mi Fabre (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Jean-Baptiste Horel (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Yoan Mollard (<a href="https://robot-enseirb-matmeca.fr/" target="_blank">Bordeaux INP</a>), Alexandre P&#xE9;r&#xE9; (<a href="https://flowers.inria.fr" target="_blank">Inria</a>), Steve N&apos;Guyen (<a href="https://www.labri.fr/" target="_blank">LaBRI</a>) .</p>
+<h4 id="&#x1F4AC;-besoin-daide-">&#x1F4AC; Besoin d&apos;aide ?</h4>
+<p>Posez votre question sur le <a href="https://discourse.ros.org/c/local/france/48" target="_blank">forum francophone des utilisateurs de ROS</a>.</p>
+<p>&#x1F4C5;  Derni&#xE8;re mise &#xE0; jour : 2021-01-03T19:14:24+01:00</p>
+<!-- Default to night theme -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" defer>
+$("div").first().addClass("color-theme-2");
+</script></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../integration/sawyer-tb-keras/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Sawyer + Turtlebot + Keras">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"VI. Robotique théorique","level":"1.7","depth":1,"next":{"title":"VII. Simulation","level":"1.8","depth":1,"ref":"","articles":[{"title":"Gazebo","level":"1.8.1","depth":2,"path":"simulation/gazebo/README.md","ref":"simulation/gazebo/README.md","articles":[]}]},"previous":{"title":"Sawyer + Turtlebot + Keras","level":"1.6.2","depth":2,"path":"integration/sawyer-tb-keras/README.md","ref":"integration/sawyer-tb-keras/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-plus","github","anchorjs","build","custom-favicon","language-picker","localized-footer","embed-pdf"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/ros4pro/"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"embed-pdf":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ROS4PRO","language":"fr","gitbook":"*"},"file":{"path":"theory/README.md","mtime":"2021-01-03T18:14:24.832Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-03T18:20:09.115Z"},"basePath":"..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

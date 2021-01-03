@@ -1,0 +1,629 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>I. Introduction à Linux et ROS · ROS4PRO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Qu'est-ce que c'est ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    I. Introduction à Linux et ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    II. Navigation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../navigation/turtlebot/">
+            
+                <a href="../navigation/turtlebot/">
+            
+                    
+                    Turtlebot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    III. Manipulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../manipulation/edo/">
+            
+                <a href="../manipulation/edo/">
+            
+                    
+                    E.DO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../manipulation/ergo-jr/">
+            
+                <a href="../manipulation/ergo-jr/">
+            
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../manipulation/sawyer/">
+            
+                <a href="../manipulation/sawyer/">
+            
+                    
+                    Sawyer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../manipulation/ur/README.md">
+            
+                <span>
+            
+                    
+                    Universal Robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    IV. Perception
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../perception/opencv/">
+            
+                <a href="../perception/opencv/">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../perception/keras/">
+            
+                <a href="../perception/keras/">
+            
+                    
+                    Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../perception/pytorch/">
+            
+                <a href="../perception/pytorch/">
+            
+                    
+                    Torch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    V. Intégration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../integration/ergo-tb-keras/">
+            
+                <a href="../integration/ergo-tb-keras/">
+            
+                    
+                    Poppy Ergo Jr + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../integration/sawyer-tb-keras/">
+            
+                <a href="../integration/sawyer-tb-keras/">
+            
+                    
+                    Sawyer + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../theory/">
+            
+                <a href="../theory/">
+            
+                    
+                    VI. Robotique théorique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    VII. Simulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../simulation/gazebo/">
+            
+                <a href="../simulation/gazebo/">
+            
+                    
+                    Gazebo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Foires aux Questions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../faq/pi/">
+            
+                <a href="../faq/pi/">
+            
+                    
+                    FAQ robots basés sur Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >I. Introduction à Linux et ROS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="i-introduction-&#xE0;-linux-ros-et-ros-i">I. Introduction &#xE0; Linux, ROS et ROS-I</h1>
+<h2 id="pr&#xE9;requis">Pr&#xE9;requis</h2>
+<ul>
+<li>Lyc&#xE9;e et +</li>
+<li>Notions de programmes informatiques, terminaux et commandes</li>
+</ul>
+<h2 id="diapositives">Diapositives</h2>
+<p><div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="https://files.ros4.pro/introduction.pdf">View PDF</a></div>
+                
+                                <object data="https://files.ros4.pro/introduction.pdf" width="100%" height="565px" type="application/pdf">
+                                    <embed src="https://files.ros4.pro/introduction.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="https://files.ros4.pro/introduction.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></p>
+<h2 id="1-d&#xE9;marrer-ubuntu-et-ros">1. D&#xE9;marrer Ubuntu et ROS</h2>
+<p>Selon votre situation, une cl&#xE9; USB bootable peut vous &#xEA;tre fournie. Dans ce cas, vous devez faire &quot;booter&quot; votre poste de travail sur la cl&#xE9; USB Live fournie.</p>
+<p>Dans le cas contraire, il est n&#xE9;cessaire d&apos;avoir vous m&#xEA;me install&#xE9; Ubuntu 18.04 et ROS Melodic. Dans ce cas il se peut que vous ayez &#xE0; installer vous-m&#xEA;me des &#xE9;l&#xE9;ments suppl&#xE9;mentaires tout le long des travaux pratiques.</p>
+<h2 id="2-prise-en-main-du-terminal--le-rosier-&#x1F339;">2. Prise en main du terminal : le rosier &#x1F339;</h2>
+<p>&#x2328;&#xFE0F; Pour prendre en main le terminal Linux et les commandes de base, &#xE0; partir d&apos;un terminal, cr&#xE9;ez les fichiers et dossiers n&#xE9;cessaires pour r&#xE9;aliser cette hierarchie de fichiers ressemblant &#xE0; un rosier :</p>
+<p><img src="../img/rosier.png" alt="Hierarchie de fichier du rosier"></p>
+<p>Vous aurez besoin des commandes suivantes :h</p>
+<ul>
+<li><code>ls</code>, pour lister les fichiers et dossiers courants</li>
+<li><code>cd</code>, pour changer le dossier courant</li>
+<li><code>mkdir</code>, pour cr&#xE9;er un nouveau dossier</li>
+<li><code>touch</code>, pour cr&#xE9;er un nouveau fichier vide</li>
+<li><code>nano</code>, pour cr&#xE9;er un nouveau fichier et &#xE9;crire &#xE0; l&apos;int&#xE9;rieur</li>
+<li><code>tree</code>, pour afficher la hierarchie de fichiers</li>
+</ul>
+<h2 id="3-tutoriels">3. Tutoriels</h2>
+<p>&#x1F9D1;&#x200D;&#x1F3EB; Vous &#xEA;tes d&#xE9;sormais pr&#xEA;t &#xE0; utiliser ROS ! Suivez les tutoriels ROS suivants pour d&#xE9;couvrir et tester les concepts de base, sachant que votre distribution ROS s&apos;appelle <code>melodic</code> :</p>
+<ul>
+<li><a href="http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes" target="_blank">Understanding ROS Nodes</a> : Ma&#xEE;triser ROS master (<code>roscore</code>) et lancer des n&#x153;uds (<code>rosrun</code>)</li>
+<li><a href="http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics" target="_blank">Understanding ROS Topics</a> : Envoyer et recevoir des messages dans un topic (<code>rostopic</code>)</li>
+<li><a href="http://wiki.ros.org/ROS/Tutorials/UnderstandingServicesParams" target="_blank">Understanding ROS Services and Parameters</a> : D&#xE9;clarer et appeler un service requ&#xEA;te/r&#xE9;ponse (<code>rosservice</code>, <code>rossrv</code>)</li>
+</ul>
+<p>&#x2753; <a href="quizz.pdf"><strong>Quizz</strong> : quizz au tableau pour m&#xE9;moriser les commandes importantes</a></p>
+<h2 id="4-&#x2699;&#xFE0F;-pr&#xE9;parer-vos-robots">4. &#x2699;&#xFE0F; Pr&#xE9;parer vos robots</h2>
+<p>Pour l&apos;un ou l&apos;autre de vos 2 robots, r&#xE9;alisez les &#xE9;tapes de pr&#xE9;paration suivantes expliqu&#xE9;es <a href="../faq/pi">dans la FAQ robots</a> :</p>
+<ol>
+<li>Flasher sa carte SD</li>
+<li>Connecter le robot en wifi</li>
+<li>Se connecter via SSH au robot</li>
+<li>Personnaliser le nom de votre robot (si n&#xE9;cessaire)</li>
+</ol>
+<h2 id="5-faq">5. FAQ</h2>
+<h3 id="&#x1F4E5;-mise-&#xE0;-jour-pendant-le-tp">&#x1F4E5; Mise &#xE0; jour pendant le TP</h3>
+<p>Il se peut que l&apos;enseignant mette &#xE0; jour les ressources pendant le cours. Dans ce cas ex&#xE9;cutez les commandes suivantes pour r&#xE9;cup&#xE9;rer les derni&#xE8;res mises-&#xE0;-jour :</p>
+<pre><code class="lang-bash">roscd ros4pro
+git pull origin poppy_tb3_keras
+</code></pre>
+<p>Si l&apos;erreur suivante survient :</p>
+<pre><code>error: Vos modifications locales aux fichiers suivants seraient &#xE9;cras&#xE9;es par la fusion :
+    &lt;LISTE DE FICHIERS&gt;
+Veuillez valider ou remiser vos modifications avant la fusion.
+Abandon
+</code></pre><p>Alors les fichiers sp&#xE9;cifi&#xE9;s ne peuvent pas &#xEA;tre mis &#xE0; jour car cela d&#xE9;truirait les modifications que vous avez apport&#xE9;es &#xE0; la liste des fichiers indiqu&#xE9;e. Il est recommand&#xE9; de demander conseil avant d&apos;essayer une autre action pour r&#xE9;cup&#xE9;rer la mise &#xE0; jour.</p>
+<h2 id="diapositives">Diapositives</h2>
+<p><div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="slides.pdf">View PDF</a></div>
+                
+                                <object data="slides.pdf" width="100%" height="565px" type="application/pdf">
+                                    <embed src="slides.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="slides.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></p>
+<p><div id="page-footer" class="localized-footer"><hr><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cc-by-nc-sa_euro_icon.svg/120px-Cc-by-nc-sa_euro_icon.svg.png" alt="CC-BY-NC-SA"></a></p>
+<h4 id="&#x1F4DA;-auteurs">&#x1F4DA; Auteurs</h4>
+<p>Jessica Colombel (<a href="http://inria.fr/" target="_blank">Inria</a>), R&#xE9;mi Fabre (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Jean-Baptiste Horel (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Yoan Mollard (<a href="https://robot-enseirb-matmeca.fr/" target="_blank">Bordeaux INP</a>), Alexandre P&#xE9;r&#xE9; (<a href="https://flowers.inria.fr" target="_blank">Inria</a>), Steve N&apos;Guyen (<a href="https://www.labri.fr/" target="_blank">LaBRI</a>) .</p>
+<h4 id="&#x1F4AC;-besoin-daide-">&#x1F4AC; Besoin d&apos;aide ?</h4>
+<p>Posez votre question sur le <a href="https://discourse.ros.org/c/local/france/48" target="_blank">forum francophone des utilisateurs de ROS</a>.</p>
+<p>&#x1F4C5;  Derni&#xE8;re mise &#xE0; jour : 2021-01-03T19:14:24+01:00</p>
+<!-- Default to night theme -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" defer>
+$("div").first().addClass("color-theme-2");
+</script></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Qu'est-ce que c'est ?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"I. Introduction à Linux et ROS","level":"1.2","depth":1,"next":{"title":"II. Navigation","level":"1.3","depth":1,"ref":"","articles":[{"title":"Turtlebot","level":"1.3.1","depth":2,"path":"navigation/turtlebot/README.md","ref":"navigation/turtlebot/README.md","articles":[]}]},"previous":{"title":"Qu'est-ce que c'est ?","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-plus","github","anchorjs","build","custom-favicon","language-picker","localized-footer","embed-pdf"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/ros4pro/"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"embed-pdf":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ROS4PRO","language":"fr","gitbook":"*"},"file":{"path":"introduction/README.md","mtime":"2021-01-03T18:14:24.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-03T18:20:09.115Z"},"basePath":"..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

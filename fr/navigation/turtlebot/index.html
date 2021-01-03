@@ -1,0 +1,648 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Turtlebot · ROS4PRO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Qu'est-ce que c'est ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../introduction/">
+            
+                <a href="../../introduction/">
+            
+                    
+                    I. Introduction à Linux et ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    II. Navigation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Turtlebot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    III. Manipulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../manipulation/edo/">
+            
+                <a href="../../manipulation/edo/">
+            
+                    
+                    E.DO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../manipulation/ergo-jr/">
+            
+                <a href="../../manipulation/ergo-jr/">
+            
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../manipulation/sawyer/">
+            
+                <a href="../../manipulation/sawyer/">
+            
+                    
+                    Sawyer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../manipulation/ur/README.md">
+            
+                <span>
+            
+                    
+                    Universal Robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    IV. Perception
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../perception/opencv/">
+            
+                <a href="../../perception/opencv/">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../perception/keras/">
+            
+                <a href="../../perception/keras/">
+            
+                    
+                    Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../perception/pytorch/">
+            
+                <a href="../../perception/pytorch/">
+            
+                    
+                    Torch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    V. Intégration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../integration/ergo-tb-keras/">
+            
+                <a href="../../integration/ergo-tb-keras/">
+            
+                    
+                    Poppy Ergo Jr + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../integration/sawyer-tb-keras/">
+            
+                <a href="../../integration/sawyer-tb-keras/">
+            
+                    
+                    Sawyer + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../theory/">
+            
+                <a href="../../theory/">
+            
+                    
+                    VI. Robotique théorique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    VII. Simulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../simulation/gazebo/">
+            
+                <a href="../../simulation/gazebo/">
+            
+                    
+                    Gazebo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Foires aux Questions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../faq/pi/">
+            
+                <a href="../../faq/pi/">
+            
+                    
+                    FAQ robots basés sur Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Turtlebot</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ii-robotique-de-navigation-avec-turtlebot">II. Robotique de navigation avec Turtlebot</h1>
+<h2 id="pr&#xE9;requis">Pr&#xE9;requis</h2>
+<ul>
+<li>Lyc&#xE9;e et +</li>
+<li>Notions de Python et commandes dans un terminal</li>
+<li>Aisance en g&#xE9;om&#xE9;trie 2D</li>
+<li>Le <a href="../introduction">TP d&apos;introduction</a></li>
+<li>Ce TP est compatible avec la simulation si vous n&apos;avez pas de Turtlebot</li>
+</ul>
+<h2 id="diapositives">Diapositives</h2>
+<p><div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="https://files.ros4.pro/navigation.pdf">View PDF</a></div>
+                
+                                <object data="https://files.ros4.pro/navigation.pdf" width="100%" height="565px" type="application/pdf">
+                                    <embed src="https://files.ros4.pro/navigation.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="https://files.ros4.pro/navigation.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></p>
+<h2 id="travaux-pratiques">Travaux pratiques</h2>
+<h3 id="1-assemblage-du-turtlebot-avec-un-robot-r&#xE9;el">1. Assemblage du Turtlebot (avec un robot r&#xE9;el)</h3>
+<p>&#x26A0;&#xFE0F; <strong>Attention</strong> la documentation officielle du Turtlebot convient tr&#xE8;s bien pour l&apos;&#xE9;lectrom&#xE9;canique mais la documentaiton logicielle est obsol&#xE8;te, ne tapez aucune commande de la documentation sans avoir demand&#xE9; si elle convient ! </p>
+<p>&#x26A0;&#xFE0F; <strong>Attention</strong> : vous ne pourrez faire aucune erreur de c&#xE2;blage sauf avec le c&#xE2;ble d&apos;alimentation de la Raspberry Pi qui doit imp&#xE9;rativement &#xEA;tre branch&#xE9; comme sur le sch&#xE9;ma ci-dessous <strong>au risque de d&#xE9;teriorer d&#xE9;finitivement le mat&#xE9;riel</strong>.</p>
+<p><img src="../../img/tb3_power_cable.png" alt="Attention au c&#xE2;ble d&apos;alimentation"></p>
+<p>&#x25B6;&#xFE0F; Suivez cette vid&#xE9;o pour assembler votre Turtlebot Burger :</p>
+<p><a href="https://www.youtube.com/watch?v=rvm-m2ogrLA" target="_blank"><img src="https://img.youtube.com/vi/rvm-m2ogrLA/0.jpg" alt="Vid&#xE9;o d&apos;assemblage"></a></p>
+<h3 id="2-bringup-du-tb3-avec-un-robot-r&#xE9;el">2. Bringup du TB3 (avec un robot r&#xE9;el)</h3>
+<p>&#x1F50D; V&#xE9;rifiez d&apos;abord la configuration r&#xE9;seau de ROS sur votre PC et sur le TB3 : <em>ROS_MASTER_URI</em> doit pointer vers le Turtlebot. V&#xE9;rifiez &#xE9;galement que vous avez connect&#xE9; le robot au Wifi et renomm&#xE9; votre robot en y ajoutant votre num&#xE9;ro de groupe (par ex <code>burger8</code>) avec les <a href="1_INTRODUCTION.md#4-faq-robots">instructions</a> de l&apos;introduction.</p>
+<p>&#x1F4BB; Lancez <code>roscore</code> dans un premier terminal. </p>
+<p>&#x1F916; Sur le TB3 lancer la commande <code>roslaunch turtlebot3_bringup turtlebot3_robot.launch</code>.
+S&apos;il n&apos;y a aucune erreur vous &#xEA;tes pr&#xEA;t &#xE0; piloter le robot depuis votre poste de travail, que ce soit pour la t&#xE9;l&#xE9;op&#xE9;ration, la cartographie ou la navigation autonome.</p>
+<h3 id="2bis-bringup-du-turtlebot-en-simulation">2.bis. Bringup du Turtlebot (en simulation)</h3>
+<p>&#x26A0;&#xFE0F; <strong>Attention</strong> la simulation du TB3 n&apos;est a utiliser qu&apos;en dernier recours pour remplacer votre robot s&apos;il ne fonctionne pas. Avant de passer en simulation demandez de l&apos;aide pour r&#xE9;parer votre robot.</p>
+<p>&#x1F4E5; Vous devez t&#xE9;l&#xE9;charger et installer le paquet ROS de simulation du TB3 :</p>
+<ul>
+<li>&#x1F4BB; Lancez <code>cd ~/catkin_ws/src</code> dans un terminal pour vous d&#xE9;placer dans le dossier contenant les sources de vos paquets ROS.</li>
+<li>&#x1F4BB; Lancez <code>git clone https://github.com/ros4pro/turtlebot3_simulations.git</code> dans le m&#xEA;me terminal, le dossier <code>turtlebot3_simulations</code> est cr&#xE9;&#xE9; dans le r&#xE9;pertoire <code>~/catkin_ws/src</code>.</li>
+<li>&#x1F4BB; Lancez <code>cd ..; catkin_make</code>, le nouveau paquet est install&#xE9;. Apr&#xE8;s la compilation lancez <code>source ~/.bashrc</code> dans chaque terminal pour les mettre &#xE0; jour ou fermez les tous.</li>
+</ul>
+<p>&#x1F50D; La simulation remplace le robot donc vous ne devez ni essayer de lancer le bringup du TB3 et ni vous connecter au robot. &#xC0; la place vous devez lancer le simulateur et configurer <em>ROS_MASTER_URI</em> pour pointer vers votre PC (<em>ROS master = cette machine</em>).</p>
+<p>&#x1F4BB; Lancez <code>roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch</code>, le simulateur Gazebo se lance et vous devez voir le TB3 au milieu de la fen&#xEA;tre.</p>
+<p>Plusieurs environnements de simulation sont disponibles :</p>
+<ul>
+<li><code>turtlebot3_empty_world.launch</code> : un monde vide, ne contenant que le TB3 et un sol.</li>
+<li><code>turtlebot3_house.launch</code> : une maison avec plusieurs pi&#xE8;ces et du mobilier.</li>
+<li><code>turtlebot3_world.launch</code> : le TB3 est au milieu d&apos;un carr&#xE9;.</li>
+<li><code>turtlebot3_stage_1.launch</code> : le TB3 est dans une ar&#xE8;ne carr&#xE9;e.</li>
+<li><code>turtlebot3_stage_2.launch</code> : le TB3 est dans une ar&#xE8;ne carr&#xE9; avec 4 obstacles fixes.</li>
+<li><code>turtlebot3_stage_3.launch</code> : le TB3 est dans une ar&#xE8;ne carr&#xE9; avec 4 obstacles fixes.</li>
+<li><code>turtlebot3_stage_4.launch</code> : le TB3 est dans une grande ar&#xE8;ne carr&#xE9;e avec plusieurs obstacles et des murs.</li>
+</ul>
+<h3 id="3-t&#xE9;l&#xE9;op&#xE9;ration">3. T&#xE9;l&#xE9;op&#xE9;ration</h3>
+<p>&#x1F3AE; La premi&#xE8;re &#xE9;tape consiste &#xE0; v&#xE9;rifier que votre poste de travail peut effectivement prendre le contr&#xF4;le du Turtlebot, en le t&#xE9;l&#xE9;op&#xE9;rant via les touches du clavier.</p>
+<p>&#x1F4BB; Dans un nouveau terminal lancez la commande <code>roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch</code> et gardez le focus sur le terminal pour controler le robot avec le clavier gr&#xE2;ce aux touches indiqu&#xE9;es. V&#xE9;rifiez que vous pouvez avancer, reculer, tourner &#xE0; gauche et &#xE0; droite. Vous pouvez tuer ce dernier avec Ctrl+C lorsque vous avez termin&#xE9;.</p>
+<h3 id="4-cartographie">4. Cartographie</h3>
+<p>&#x1F5FA;&#xFE0F; Nous allons d&#xE9;sormais cr&#xE9;er la carte de l&apos;environnement dans lequel votre Turtlebot &#xE9;voluera lorsqu&apos;il naviguera de mani&#xE8;re autonome. </p>
+<p>&#x1F4BB; Lancez le commande <code>roslaunch turtlebot3_slam turtlebot3_slam.launch</code>. RViz se lance et vous devriez apercevoir le robot, les scans du LIDAR et la carte en construction.</p>
+<p>&#x1F4BB; Dans un nouveau terminal lancez la commande <code>roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch</code> et gardez le focus sur le terminal pour contr&#xF4;ler le robot avec le clavier comme pr&#xE9;c&#xE9;demment. Cependant cette fois-ci, votre carte est en cours d&apos;enregistrement. Quand la carte est termin&#xE9;e <strong>ne quittez ni RViz ni le terminal de la cartographie</strong>.</p>
+<p>&#x1F4BB; Dans un nouveau terminal lancez la commande <code>roscd turtlebot3_navigation/maps/</code> pour aller dans le dossier o&#xF9; la carte est enregistr&#xE9;e.</p>
+<p>&#x1F4BE; La commande qui va suivre va supprimer la carte pr&#xE9;c&#xE9;dente s&apos;il y en a une, le cas &#xE9;ch&#xE9;ant faites-en une copie si vous souhaitez la conserver. Lancez la commande <code>roslaunch ros4pro map_saver.launch</code> qui va sauvegarder la carte dans les fichiers maps.yaml et maps.pgm et &#xE9;craser les anciens.</p>
+<h3 id="5-navigation">5. Navigation</h3>
+<p>&#x1F4BB; Lancez le commande <code>roslaunch turtlebot3_navigation turtlebot3_navigation.launch</code> pour lancer la localisation et la navigation autonome.</p>
+<p>&#x1F440; Sur RViz vous devez voir le robot, les scans du LIDAR, les particules de AMCL et la carte que vous avez enregistr&#xE9;e.</p>
+<p>&#x1F4CD; Si le robot est mal localis&#xE9;, utilisez l&apos;outil <em>2D Pose Estimate</em> sur RViz. Cliquez et Glissez avec la souris pour positionner le robot sur la carte.</p>
+<p>&#x1F4CD; Pour donner des ordres de navigation, utilisez l&apos;outil <em>2D Nav Goal</em> sur RViz. Cliquez et Glissez avec la souris sur la carte l&#xE0; o&#xF9; le robot doit aller.</p>
+<h3 id="6-scenario-de-navigation">6. Scenario de navigation</h3>
+<p>&#x1F697; L&apos;objectif final du TP est de faire passer le robot par une suite de 4 ou 5 points de passage, comme pour une patrouille, avec un retour au point de d&#xE9;part. Si cela n&apos;est pas d&#xE9;j&#xE0; fait, choisissez plusieurs points de passage faciles &#xE0; mesurer avec un m&#xE8;tre depuis le point de d&#xE9;part, avec un grand nombre d&apos;obstacles sur le chemin. Si l&apos;environnement a fortement chang&#xE9;, pensez &#xE0; enregistrer une nouvelle carte.</p>
+<p>&#x1F40D; Les commandes pour naviguer jusqu&apos;&#xE0; chaque point de passage seront des instructions dans un fichier Python. Le noeud <code>navigation_scenario.py</code> auquel vous pourrez acc&#xE9;der en tapant <code>roscd ros4pro/src/nodes</code> est une &#xE9;bauche de script Python pour y parvenir.</p>
+<p>&#x1F40D; Compl&#xE9;tez ce fichier Python afin d&apos;ex&#xE9;cuter le scenario et ainsi effectuer la patrouille. Pour ex&#xE9;cuter le sc&#xE9;nario lancez la navigation en arri&#xE8;re plan comme indiqu&#xE9; dans <strong>2.5 Navigation</strong> puis lancez la commande <code>rosrun ros4pro navigate_waypoints.py</code>.</p>
+<h2 id="&#x1F9F3;-challenge-additionnel--carry-my-luggage">&#x1F9F3; Challenge additionnel : Carry my luggage</h2>
+<p>Challenge inspir&#xE9; de l&apos;&#xE9;preuve &quot;Carry my luggage&quot; de la RoboCup @Home.
+Pour info, le r&#xE9;glement de la comp&#xE9;tition se trouve ici (mais &#xE7;a n&apos;apporte rien pour votre projet) :
+<a href="https://athome.robocup.org/wp-content/uploads/2019_rulebook.pdf" target="_blank">https://athome.robocup.org/wp-content/uploads/2019_rulebook.pdf</a></p>
+<p>&#x1F5FA;&#xFE0F; <strong>Pr&#xE9;requis :</strong> avoir une carte repr&#xE9;sentative de l&apos;environnement.</p>
+<h4 id="&#x27A1;&#xFE0F;-phase-1--follow-me">&#x27A1;&#xFE0F; Phase 1 : Follow me</h4>
+<p>Vous avez toute libert&#xE9; pour pr&#xE9;parer le d&#xE9;but de l&apos;&#xE9;preuve (ex. comment faire que le robot soit bien localis&#xE9; d&#xE8;s le d&#xE9;but ?).</p>
+<p>Le robot part d&apos;un point connu et doit suivre un humain qui va &#xE0; un endroit inconnu par le robot (mais &#xE0; l&apos;int&#xE9;rieur de la carte). L&apos;humain commence l&apos;&#xE9;preuve en &#xE9;tant en face du robot &#xE0; une distance de 50 cm.</p>
+<p>Le robot doit suivre l&apos;humain en maintenant une distance comprise entre 20cm minimum et 1m maximum.</p>
+<p>Pour &#xEA;tre valide, l&apos;humain doit avoir un d&#xE9;placement non trivial : il ne va pas toujours tout droit et il fait varier sa vitesse de marche dans la limite du raisonnable. Distance minimum de marche demand&#xE9;e 4 m&#xE8;tres (mais vous &#xEA;tes libres de faire plus si &#xE7;a vous arrange, &#xE7;a n&apos;impactera pas directement la note). Il faut obligatoirement que le robot traverse une porte.</p>
+<p>Lorsque l&apos;humain est arriv&#xE9; &#xE0; sa destination, il s&apos;arr&#xEA;te pendant une dur&#xE9;e d&apos;au moins 3 secondes. Le robot doit alors comprendre que la phase 1 est termin&#xE9;e et passer &#xE0; la phase 2.</p>
+<h4 id="&#x21A9;&#xFE0F;-phase-2--go-home">&#x21A9;&#xFE0F; Phase 2 : Go home</h4>
+<p>Le robot doit repartir et naviguer en totale autonomie jusqu&apos;&#xE0; son point de d&#xE9;part. Sur le retour, vous rajouterez jusqu&apos;&#xE0; :</p>
+<ul>
+<li>1 obstacle statique sur son chemin de retour</li>
+<li>1 obstacle dynamique (typiquement un humain qui lui coupe la route)</li>
+<li>1 obstacle qui bloque compl&#xE8;tement le passage pr&#xE9;vu par le robot (il faut qu&apos;il ait la possiblit&#xE9; d&apos;arriver &#xE0; destination par un autre chemin)</li>
+</ul>
+<p>Si le robot arrive &#xE0; destination (&#xE0; +-20cm, +-15&#xB0;) la phase 2 est valid&#xE9;e.</p>
+<h4 id="&#x2199;&#xFE0F;-phase-3--dock">&#x2199;&#xFE0F; Phase 3 : Dock</h4>
+<p>Le robot doit chercher o&#xF9; se trouve sa base et s&apos;y accoster. La position grossi&#xE8;re de la base est connue mais cette partie n&apos;est valid&#xE9;e que si le robot r&#xE9;ussi un accostage pr&#xE9;cis sans contact : la distance entre le robot et la base soit &#xEA;tre sup&#xE9;riere &#xE0; 5mm et inf&#xE9;rieure &#xE0; 2cm.</p>
+<p>Vous avez toute libert&#xE9; pour choisir un objet qui repr&#xE9;sentera la base du robot. Un pot de peinture par exemple serait un choix pertinent (la sym&#xE9;trie radiale peut simplifier la d&#xE9;tection).</p>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="../../faq/pi/">FAQ des robots</a></li>
+<li><a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/" target="_blank">Documentation du TB3</a> (obsol&#xE8;te pour les commandes logicielles !) </li>
+<li><a href="http://wiki.ros.org/gmapping" target="_blank">gmapping</a></li>
+<li><a href="http://wiki.ros.org/move_base" target="_blank">move_base</a></li>
+</ul>
+<p><div id="page-footer" class="localized-footer"><hr><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cc-by-nc-sa_euro_icon.svg/120px-Cc-by-nc-sa_euro_icon.svg.png" alt="CC-BY-NC-SA"></a></p>
+<h4 id="&#x1F4DA;-auteurs">&#x1F4DA; Auteurs</h4>
+<p>Jessica Colombel (<a href="http://inria.fr/" target="_blank">Inria</a>), R&#xE9;mi Fabre (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Jean-Baptiste Horel (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Yoan Mollard (<a href="https://robot-enseirb-matmeca.fr/" target="_blank">Bordeaux INP</a>), Alexandre P&#xE9;r&#xE9; (<a href="https://flowers.inria.fr" target="_blank">Inria</a>), Steve N&apos;Guyen (<a href="https://www.labri.fr/" target="_blank">LaBRI</a>) .</p>
+<h4 id="&#x1F4AC;-besoin-daide-">&#x1F4AC; Besoin d&apos;aide ?</h4>
+<p>Posez votre question sur le <a href="https://discourse.ros.org/c/local/france/48" target="_blank">forum francophone des utilisateurs de ROS</a>.</p>
+<p>&#x1F4C5;  Derni&#xE8;re mise &#xE0; jour : 2021-01-03T19:14:24+01:00</p>
+<!-- Default to night theme -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" defer>
+$("div").first().addClass("color-theme-2");
+</script></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Turtlebot","level":"1.3.1","depth":2,"next":{"title":"III. Manipulation","level":"1.4","depth":1,"ref":"","articles":[{"title":"E.DO","level":"1.4.1","depth":2,"path":"manipulation/edo/README.md","ref":"manipulation/edo/README.md","articles":[]},{"title":"Poppy Ergo Jr","level":"1.4.2","depth":2,"path":"manipulation/ergo-jr/README.md","ref":"manipulation/ergo-jr/README.md","articles":[]},{"title":"Sawyer","level":"1.4.3","depth":2,"path":"manipulation/sawyer/README.md","ref":"manipulation/sawyer/README.md","articles":[]},{"title":"Universal Robot","level":"1.4.4","depth":2,"path":"manipulation/ur/README.md","ref":"manipulation/ur/README.md","articles":[]}]},"previous":{"title":"II. Navigation","level":"1.3","depth":1,"ref":"","articles":[{"title":"Turtlebot","level":"1.3.1","depth":2,"path":"navigation/turtlebot/README.md","ref":"navigation/turtlebot/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","search-plus","github","anchorjs","build","custom-favicon","language-picker","localized-footer","embed-pdf"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/ros4pro/"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"embed-pdf":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ROS4PRO","language":"fr","gitbook":"*"},"file":{"path":"navigation/turtlebot/README.md","mtime":"2021-01-03T18:14:24.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-03T18:20:09.115Z"},"basePath":"../..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

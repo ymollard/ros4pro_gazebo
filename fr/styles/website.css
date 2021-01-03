@@ -1,0 +1,27 @@
+/* Night theme override */
+.book.color-theme-2 .book-body .body-inner .book-header {
+    background-color: #a62639;
+    color: white;
+}
+
+.book.color-theme-2 .fa {
+  color: white;
+}
+
+.book.color-theme-2 .fa:hover {
+  color: darkgrey;
+}
+
+.page-wrapper .page-inner {
+  max-width: 1000px;
+}
+
+/* PDF plugin */
+.pdf__link > a {
+  display: none;
+}
+
+/* Other */
+.book-summary ul.summary li .gitbook-link {
+  display: none;
+}

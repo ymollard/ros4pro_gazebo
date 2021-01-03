@@ -1,0 +1,731 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Keras · ROS4PRO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../pytorch/" />
+    
+    
+    <link rel="prev" href="../opencv/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Qu'est-ce que c'est ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../introduction/">
+            
+                <a href="../../introduction/">
+            
+                    
+                    I. Introduction à Linux et ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    II. Navigation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../navigation/turtlebot/">
+            
+                <a href="../../navigation/turtlebot/">
+            
+                    
+                    Turtlebot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    III. Manipulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../manipulation/edo/">
+            
+                <a href="../../manipulation/edo/">
+            
+                    
+                    E.DO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../manipulation/ergo-jr/">
+            
+                <a href="../../manipulation/ergo-jr/">
+            
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../manipulation/sawyer/">
+            
+                <a href="../../manipulation/sawyer/">
+            
+                    
+                    Sawyer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../manipulation/ur/README.md">
+            
+                <span>
+            
+                    
+                    Universal Robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    IV. Perception
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../opencv/">
+            
+                <a href="../opencv/">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../pytorch/">
+            
+                <a href="../pytorch/">
+            
+                    
+                    Torch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    V. Intégration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../integration/ergo-tb-keras/">
+            
+                <a href="../../integration/ergo-tb-keras/">
+            
+                    
+                    Poppy Ergo Jr + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../integration/sawyer-tb-keras/">
+            
+                <a href="../../integration/sawyer-tb-keras/">
+            
+                    
+                    Sawyer + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../theory/">
+            
+                <a href="../../theory/">
+            
+                    
+                    VI. Robotique théorique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    VII. Simulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../simulation/gazebo/">
+            
+                <a href="../../simulation/gazebo/">
+            
+                    
+                    Gazebo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Foires aux Questions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../faq/pi/">
+            
+                <a href="../../faq/pi/">
+            
+                    
+                    FAQ robots basés sur Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Keras</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="iv-perception-avec-keras">IV. Perception avec Keras</h1>
+<p>Keras est un syst&#xE8;me d&apos;apprentissage automatique utilisant des r&#xE9;seaux de neurones. Nous allons l&apos;utiliser ici sur des imagettes sur lesquelles sont inscrites des chiffres marqu&#xE9;s manuellement au feutre avec diff&#xE9;rentes calligraphies. Le r&#xE9;seau de neurones que vous allez cr&#xE9;er devra apprendre lui-m&#xEA;me &#xE0; d&#xE9;terminer quel chiffre est marqu&#xE9;, ce que l&apos;on appelle <strong>classifier</strong>. </p>
+<h2 id="pr&#xE9;requis">Pr&#xE9;requis</h2>
+<ul>
+<li>BAC+2 et +</li>
+<li>Bonne compr&#xE9;hension de Python et numpy</li>
+</ul>
+<h2 id="diapositives">Diapositives</h2>
+<p><div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="https://files.ros4.pro/perception.pdf">View PDF</a></div>
+                
+                                <object data="https://files.ros4.pro/perception.pdf" width="100%" height="565px" type="application/pdf">
+                                    <embed src="https://files.ros4.pro/perception.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="https://files.ros4.pro/perception.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></p>
+<h2 id="0-installation">0. Installation</h2>
+<p>Le code source se trouve &#xE0; <a href="https://gitlab.inria.fr/apere/ros_workshop/-/tree/master" target="_blank">cet emplacement</a>.</p>
+<p>Pour effectuer cet atelier, vous devez installer quelques packages:</p>
+<pre><code>pip install tensorflow keras imageio matplotlib scikit-image numpy
+git clone https://gitlab.inria.fr/apere/ros_workshop.git
+</code></pre><h2 id="1-documentation">1. Documentation</h2>
+<p>Pour manipuler le code, vous aurez besoin de consulter plusieurs documentations. De mani&#xE8;re g&#xE9;n&#xE9;rale, vous aurez besoin de numpy. Si vous n&apos;&#xEA;tes pas familier avec, vous pouvez consulter:</p>
+<ul>
+<li><a href="https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf" target="_blank">Numpy cheatsheet</a></li>
+<li><a href="https://numpy.org/devdocs/user/quickstart.html" target="_blank">Numpy Documentation</a>
+Pour la partie d&#xE9;tection et pr&#xE9;-processing, nous utiliserons <code>scikit-image</code>: </li>
+<li><a href="https://scikit-image.org/docs" target="_blank">Scikit-Image Documentation</a>
+Enfin, pour la partie reconnaissance, nous utiliserons <code>keras</code>. Vous devriez trouver ce qu&apos;il vous faut dans le tutoriel suivant:</li>
+<li><a href="https://keras.io/" target="_blank">Keras Documentation</a></li>
+</ul>
+<h2 id="2-partie-apprentissage">2. Partie apprentissage</h2>
+<p>Commencez par ouvrir le fichier <code>learning.py</code>.</p>
+<h3 id="21-chargement-des-donn&#xE9;es">2.1 Chargement des donn&#xE9;es</h3>
+<p>Prenez connaissance du code, puis lancez le en ex&#xE9;cutant &#xE0; la ligne de commande:</p>
+<pre><code>python learning.py
+</code></pre><p>Avant d&apos;appuyer sur entr&#xE9;e, r&#xE9;pondez aux questions suivantes: </p>
+<ul>
+<li>Que contiennent les variables <code>x_train</code> et <code>y_train</code>?</li>
+<li>Pourquoi la fonction <code>load_data</code> renvoie-t-elle &#xE9;galement les variables <code>x_test</code> et <code>y_test</code>?</li>
+<li>Quelles sont les formes respectives de <code>x_train</code> et <code>y_train</code>? </li>
+</ul>
+<h3 id="22-pr&#xE9;visualisation-des-donn&#xE9;es-brutes">2.2 Pr&#xE9;visualisation des donn&#xE9;es brutes</h3>
+<p>Appuyez sur entr&#xE9;e pour continuer, et observez les images. R&#xE9;pondez aux questions suivantes:</p>
+<ul>
+<li>Quelle sont les valeurs des pixels blancs (repr&#xE9;sent&#xE9;s en jaune) et des pixels noirs ? </li>
+<li>Observez bien les donn&#xE9;es et leurs labels. Toutes les images sont elles simples &#xE0; classifier correctement? Ferriez vous des erreurs en les classifiants ?</li>
+</ul>
+<h3 id="23-pr&#xE9;paration-des-donn&#xE9;es">2.3 Pr&#xE9;paration des donn&#xE9;es</h3>
+<p>Fermez la fen&#xEA;tre et appuyez &#xE0; nouveau sur entr&#xE9;e. R&#xE9;pondez aux questions suivantes:</p>
+<ul>
+<li>Quelle sont les formes respectives de <code>x_train</code> et <code>y_train</code> maintenant?</li>
+<li>Pourquoi ces changements ?</li>
+</ul>
+<h3 id="24-pr&#xE9;visulation-des-donn&#xE9;es-pr&#xE9;par&#xE9;es">2.4 Pr&#xE9;visulation des donn&#xE9;es pr&#xE9;par&#xE9;es</h3>
+<p>Appuyez &#xE0; nouveau sur entr&#xE9;e et observez les images:</p>
+<ul>
+<li>Quelles sont les valeurs des pixels blanc et des pixels noirs maintenant?</li>
+<li>Regardez la fonction <code>prepare_input</code>. Quelle transformation des images est effectu&#xE9;e? </li>
+</ul>
+<h3 id="25-le-mod&#xEA;le">2.5 Le mod&#xEA;le</h3>
+<p>Arr&#xEA;tez le script en appuyant sur <code>ctrl+c</code>. Dans le fichier, modifiez la fonction <code>build_model</code> pour impl&#xE9;menter le r&#xE9;seau <em>LeNet</em> vu pendant la pr&#xE9;sentation. Une fois cela fait, relancez le script et faites d&#xE9;filer jusqu&apos;&#xE0; la partie 2.5. Observez le r&#xE9;sum&#xE9; du mod&#xEA;le: </p>
+<ul>
+<li>Observez le nombre de param&#xEA;tres par couche. Quelles sont les couches qui ont le plus grand nombre de param&#xEA;tre? </li>
+<li>Qu&apos;en concluez vous sur l&apos;utilit&#xE9; des couches par convolution ?</li>
+</ul>
+<h3 id="26-la-fonction-de-cout-et-loptimiseur">2.6 La fonction de cout et l&apos;optimiseur</h3>
+<p>Arr&#xEA;tez le script en appuyant sur <code>ctrl+c</code>. Durant la pr&#xE9;sentation, nous avons vu que deux fonctions de co&#xFB;t sont r&#xE9;guli&#xE8;rement utilis&#xE9;es dans l&apos;entrainement des r&#xE9;seaux de neurones:</p>
+<ul>
+<li>L&apos;&#xE9;rreur quadratique moyenne (Mean squared error)</li>
+<li>L&apos;entropie crois&#xE9;e (Cross entropy)
+Dans le fichier, modifiez la fonction <code>get_loss</code> pour impl&#xE9;menter la fonction de co&#xFB;t adapt&#xE9;e &#xE0; notre probl&#xEA;me.</li>
+</ul>
+<p>Pendant la pr&#xE9;sentation, nous avons vu que l&apos;optimiseur est l&apos;algorithme qui permet de se d&#xE9;placer sur la surface d&#xE9;ssin&#xE9;e par la fonction de cout dans l&apos;espace des param&#xEA;tres. Cet algorithme permet de chercher l&apos;endroit ou la fonction de cout est minimale. </p>
+<p>Un des algorithmes les plus simples s&apos;appelle la <strong>descente de gradient</strong> (GD) et consiste &#xE0; se d&#xE9;placer dans le sens de la pente la plus forte &#xE0; chaque pas de temps:</p>
+<ul>
+<li>Dans quelle hypoth&#xE8;se cet algorithme permet il de trouver le minimum global de la fonction de co&#xFB;t selon vous ?</li>
+<li>Pensez vous que cette hypoth&#xE8;se soit v&#xE9;rifi&#xE9;e pour les r&#xE9;seaux de neurones ?</li>
+<li>Que se passe-t-il si cette hypoth&#xE8;se n&apos;est pas v&#xE9;rifi&#xE9;e ? </li>
+</ul>
+<p><strong>Adam</strong> est un optimiseur plus complexe que GD. Sur l&apos;image suivante, on voit plusieurs optimiseurs se d&#xE9;placer sur une fonction de cout.
+<img src="https://github.com/Jaewan-Yun/optimizer-visualization/raw/master/figures/movie11.gif" alt="cette image"></p>
+<p>Concentrez-vous sur Adam et GD:</p>
+<ul>
+<li>Quelle semble &#xEA;tre la caract&#xE9;ristique de Adam compar&#xE9;e a GD? </li>
+</ul>
+<p>Une autre caracteristique de l&apos;algorithme GD, est que la taille du pas qui est effectu&#xE9; &#xE0; chaque it&#xE9;ration est fixe. L&apos;image suivante montre Adam et GD dans un cas ou la pente devient tr&#xE9;s forte. 
+<img src="https://github.com/Jaewan-Yun/optimizer-visualization/raw/master/figures/movie9.gif" alt="cette image"></p>
+<p>Repondez aux questions suivantes: </p>
+<ul>
+<li>GD arrive-t-il &#xE0; converger ? Comprenez vous pourquoi ?</li>
+<li>Adam ne semble pas soumis au m&#xEA;me probl&#xEA;me que GD ? Quelle autre caract&#xE9;ristique de Adam cela montre t il? </li>
+</ul>
+<p>Enfin: </p>
+<ul>
+<li>Quelle conclusion pouvez vous tirer sur l&apos;utilit&#xE9; de GD pour entrainer des r&#xE9;seaux de neurones ?</li>
+<li>Quel est l&apos;algorithme utilis&#xE9; dans le code ?</li>
+</ul>
+<h3 id="27-entrainement">2.7 Entrainement</h3>
+<p>Relancez le code et appuyez sur entr&#xE9;e jusqu&apos;au d&#xE9;clenchement de la partie 2.7. Vous devriez voir les it&#xE9;rations d&apos;entrainement se succ&#xE9;der:</p>
+<ul>
+<li>Observez l&apos;&#xE9;volution de la pr&#xE9;cision sur l&apos;ensemble d&apos;entrainement et l&apos;ensemble de test. Les valeurs sont elles identiques ?</li>
+<li>&#xC0; partir de combien d&apos;&#xE9;poques le r&#xE9;seau est il entrain&#xE9; selon vous ?</li>
+<li>En r&#xE9;glant le nombre d&apos;it&#xE9;ration d&apos;apprentissage dans le code (argument <code>epochs</code> de la fonction fit), arrivez vous &#xE0; observer une phase de sur-apprentissage ?</li>
+</ul>
+<h3 id="28-poids-appris">2.8 Poids appris</h3>
+<p>Appuyez sur entr&#xE9;e pour visualiser les noyaux appris par le r&#xE9;seau de neurones:</p>
+<ul>
+<li>En observant les noyaux de la premi&#xE8;re couche, arrivez vous &#xE0; distinguer le genre de features qui seront extraites par chacun?</li>
+<li>Pouvez vous en faire de m&#xEA;me pour la deuxi&#xE8;me couche ?</li>
+</ul>
+<h3 id="29-activations">2.9 Activations</h3>
+<p>Appuyez sur entr&#xE9;e, puis rentrez un indice (un entier de n&apos;importe quelle valeur inferieure a 12000):</p>
+<ul>
+<li>Apr&#xE8;s la premi&#xE8;re couche de convolution, les features extraites correspondent elles &#xE0; celles que vous imaginiez ?</li>
+<li>Apr&#xE8;s la premi&#xE8;re couche de pooling, les features pr&#xE9;sentes auparavant sont elles conserv&#xE9;es ?</li>
+<li>Apr&#xE8;s la deuxi&#xE8;me couche de pooling, diriez vous que de l&apos;information spatiale est toujours pr&#xE9;sente ? Autrement dit, les activations ressemblent elles toujours &#xE0; des images ?</li>
+</ul>
+<h3 id="210-entrainement-final">2.10 Entrainement final</h3>
+<p>Arr&#xEA;tez le script en appuyant sur <code>ctrl+c</code>. Jusqu&apos;&#xE0; pr&#xE9;sent, nous avons travaill&#xE9; sur l&apos;ensemble des donn&#xE9;es, mais pour la suite nous n&apos;aurons besoin que des images de 1 et de 2. Changez la valeur de la variable <code>CLASSES</code> pour ne garder que les classes qui nous int&#xE9;ressent, entrainez en r&#xE9;seau, puis sauvegardez le dans un fichier.</p>
+<h2 id="3-partie-vision">3. Partie vision</h2>
+<p>Ouvrez le fichier <code>detection.py</code>.</p>
+<h3 id="31-pr&#xE9;sentation-des-donn&#xE9;es">3.1 Pr&#xE9;sentation des donn&#xE9;es</h3>
+<p>D&#xE9;marrez le script. Une des images d&apos;exemple issue du robot devrait vous &#xEA;tre pr&#xE9;sent&#xE9;e:</p>
+<ul>
+<li>Observez les valeurs de pixels ? Quelles sont les valeurs de pixels blancs et noirs ?</li>
+<li>De mani&#xE8;re g&#xE9;nerale, la face des cubes est elle semblable aux images de mnist ? </li>
+</ul>
+<h3 id="32-binarisation-de-limage">3.2 Binarisation de l&apos;image</h3>
+<p>Appuyez sur entr&#xE9;e, et vous devriez voir s&apos;afficher une image binarisee:</p>
+<ul>
+<li>Pouvez vous penser &#xE0; un algorithme permettant d&apos;arriver &#xE0; un r&#xE9;sultat &#xE0; peu pr&#xE9;s similaire ?</li>
+</ul>
+<p>Dans le code observez la fonction <code>binarize</code>:</p>
+<ul>
+<li>A quoi sert la fonction <code>threshold_otsu</code> ? Aidez vous de la documentationde <code>scikit-image</code>.</li>
+<li>Ajoutez une ligne pour afficher la valeur de <code>thresh</code> &#xE0; chaque appel de la fonction. Cette valeur est elle la m&#xEA;me pour toutes les images ?</li>
+</ul>
+<p>En commentant successivement les lignes les utilisant, d&#xE9;crivez l&apos;impact de chacune des fonctions suivantes:</p>
+<ul>
+<li>A quoi sert la fonction <code>closing</code> ?</li>
+<li>A quoi sert la fonction <code>clear_border</code> ?</li>
+<li>A quoi sert la fonction <code>convex_hull_object</code> ?</li>
+<li>Concluez en r&#xE9;sumant l&apos;enchainement des op&#xE9;rations effectu&#xE9;es dans la fonction <code>binarize</code>.</li>
+</ul>
+<p>N&apos;hesitez pas &#xE0; vous aider de la documentation de <code>scikit-image</code>.</p>
+<h3 id="33-recherche-de-contours">3.3 Recherche de contours</h3>
+<p>Appuyez sur entr&#xE9;e pour faire d&#xE9;filer quelques images dont les contours ont &#xE9;t&#xE9; d&#xE9;tect&#xE9;s.</p>
+<p>Observez la fonction <code>get_box_contours</code>:</p>
+<ul>
+<li>A quoi sert la fonction <code>find_contour</code> ?</li>
+<li>A quoi sert la fonction <code>approximate_square</code> ? Sur quelle fonction de <code>scikit-image</code> repose-t-elle ?</li>
+<li>A quoi sert la fonction <code>reorder_contour</code> ? Pourquoi cette op&#xE9;ration est elle importante ?</li>
+<li>Concluez en r&#xE9;sumant l&apos;enchainement des op&#xE9;rations effectu&#xE9;es dans la fonction <code>get_box_contours</code></li>
+</ul>
+<h3 id="34-extraction-des-vignettes">3.4 Extraction des vignettes</h3>
+<p>Appuyez sur entr&#xE9;e pour faire d&#xE9;filer quelques images dont les vignettes ont &#xE9;t&#xE9; extraites.</p>
+<p>Observez la fonction <code>get_sprites</code>:</p>
+<ul>
+<li>Qu&apos;est ce qu&apos;une transformation projective ? </li>
+<li>Regardez l&apos;ordre des points source et repensez &#xE0; la fonction <code>reorder_contour</code>. Son importance est elle plus claire maintenant?</li>
+<li>Dans quelle limites d&apos;orientation, le cube sera-t-il r&#xE9;orient&#xE9; correctement ?</li>
+</ul>
+<h3 id="35-pr&#xE9;paration-des-images">3.5 Pr&#xE9;paration des images</h3>
+<p>Pendant la phase d&apos;apprentissage, nous avons &#xE9;tudi&#xE9; la pr&#xE9;paration qui &#xE9;tait faite des images. Les vignettes que nous allons pr&#xE9;senter au r&#xE9;seau de neurones doivent aussi subir une pr&#xE9;paration pour avoir les m&#xEA;mes caract&#xE9;ristiques que les images d&apos;entrainement. Remplissez la fonction <code>preprocess_sprites</code> pour effectuer cette pr&#xE9;paration.</p>
+<p>Une fois que cela est fait, executez le script jusqu&apos;&#xE0; la fin.</p>
+<h2 id="4-int&#xE9;gration">4. Int&#xE9;gration</h2>
+<p>Une fois termin&#xE9;, vous pouvez vous rendre dans <code>main.py</code> pour tester l&apos;int&#xE9;gration de la d&#xE9;tection et de la reconnaissance. Bravo !</p>
+<p><div id="page-footer" class="localized-footer"><hr><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cc-by-nc-sa_euro_icon.svg/120px-Cc-by-nc-sa_euro_icon.svg.png" alt="CC-BY-NC-SA"></a></p>
+<h4 id="&#x1F4DA;-auteurs">&#x1F4DA; Auteurs</h4>
+<p>Jessica Colombel (<a href="http://inria.fr/" target="_blank">Inria</a>), R&#xE9;mi Fabre (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Jean-Baptiste Horel (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Yoan Mollard (<a href="https://robot-enseirb-matmeca.fr/" target="_blank">Bordeaux INP</a>), Alexandre P&#xE9;r&#xE9; (<a href="https://flowers.inria.fr" target="_blank">Inria</a>), Steve N&apos;Guyen (<a href="https://www.labri.fr/" target="_blank">LaBRI</a>) .</p>
+<h4 id="&#x1F4AC;-besoin-daide-">&#x1F4AC; Besoin d&apos;aide ?</h4>
+<p>Posez votre question sur le <a href="https://discourse.ros.org/c/local/france/48" target="_blank">forum francophone des utilisateurs de ROS</a>.</p>
+<p>&#x1F4C5;  Derni&#xE8;re mise &#xE0; jour : 2021-01-03T19:14:24+01:00</p>
+<!-- Default to night theme -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" defer>
+$("div").first().addClass("color-theme-2");
+</script></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../opencv/" class="navigation navigation-prev " aria-label="Previous page: OpenCV">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../pytorch/" class="navigation navigation-next " aria-label="Next page: Torch">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Keras","level":"1.5.2","depth":2,"next":{"title":"Torch","level":"1.5.3","depth":2,"path":"perception/pytorch/README.md","ref":"perception/pytorch/README.md","articles":[]},"previous":{"title":"OpenCV","level":"1.5.1","depth":2,"path":"perception/opencv/README.md","ref":"perception/opencv/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-plus","github","anchorjs","build","custom-favicon","language-picker","localized-footer","embed-pdf"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/ros4pro/"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"embed-pdf":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ROS4PRO","language":"fr","gitbook":"*"},"file":{"path":"perception/keras/README.md","mtime":"2021-01-03T18:14:24.828Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-03T18:20:09.115Z"},"basePath":"../..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

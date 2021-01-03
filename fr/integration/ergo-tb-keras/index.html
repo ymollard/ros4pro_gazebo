@@ -1,0 +1,656 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Poppy Ergo Jr + Turtlebot + Keras · ROS4PRO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../sawyer-tb-keras/" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Qu'est-ce que c'est ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../introduction/">
+            
+                <a href="../../introduction/">
+            
+                    
+                    I. Introduction à Linux et ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    II. Navigation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../navigation/turtlebot/">
+            
+                <a href="../../navigation/turtlebot/">
+            
+                    
+                    Turtlebot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    III. Manipulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../manipulation/edo/">
+            
+                <a href="../../manipulation/edo/">
+            
+                    
+                    E.DO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../manipulation/ergo-jr/">
+            
+                <a href="../../manipulation/ergo-jr/">
+            
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../manipulation/sawyer/">
+            
+                <a href="../../manipulation/sawyer/">
+            
+                    
+                    Sawyer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../manipulation/ur/README.md">
+            
+                <span>
+            
+                    
+                    Universal Robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    IV. Perception
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../perception/opencv/">
+            
+                <a href="../../perception/opencv/">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../perception/keras/">
+            
+                <a href="../../perception/keras/">
+            
+                    
+                    Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../perception/pytorch/">
+            
+                <a href="../../perception/pytorch/">
+            
+                    
+                    Torch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    V. Intégration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Poppy Ergo Jr + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../sawyer-tb-keras/">
+            
+                <a href="../sawyer-tb-keras/">
+            
+                    
+                    Sawyer + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../theory/">
+            
+                <a href="../../theory/">
+            
+                    
+                    VI. Robotique théorique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    VII. Simulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../simulation/gazebo/">
+            
+                <a href="../../simulation/gazebo/">
+            
+                    
+                    Gazebo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Foires aux Questions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../faq/pi/">
+            
+                <a href="../../faq/pi/">
+            
+                    
+                    FAQ robots basés sur Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Poppy Ergo Jr + Turtlebot + Keras</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="v-int&#xE9;gration-poppy-ergo-jr--turtlebot--keras">V. Int&#xE9;gration Poppy Ergo Jr + Turtlebot + Keras</h1>
+<p>L&apos;int&#xE9;gration consiste &#xE0; int&#xE9;grer dans une m&#xEA;me cellule robotique les 3 briques logicielles travaill&#xE9;es les autres jours, &#xE0; savoir :</p>
+<ul>
+<li>La manipulation par le bras robotique</li>
+<li>La navigation avec le robot roulant</li>
+<li>La vision avec le r&#xE9;seau de neurones</li>
+</ul>
+<p>Le scenario de l&apos;int&#xE9;gration est un syst&#xE8;me de tri robotis&#xE9; de pi&#xE8;ces dans un bac 1 ou un bac 2 selon leur marquage au feutre.</p>
+<h2 id="pr&#xE9;requis">Pr&#xE9;requis</h2>
+<ul>
+<li>Avoir suivi les TP <em>Introduction</em>, <em>Manipulation</em>, <em>Navigation</em>, et <em>Perception</em> </li>
+<li>Avoir r&#xE9;alis&#xE9; une &#xE9;bauche de n&#x153;ud Python pour chacun des TP <em>Manipulation</em>, <em>Navigation</em>, et <em>Perception</em></li>
+</ul>
+<h2 id="diapositives">Diapositives</h2>
+<p><div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="https://files.ros4.pro/integration.pdf">View PDF</a></div>
+                
+                                <object data="https://files.ros4.pro/integration.pdf" width="100%" height="565px" type="application/pdf">
+                                    <embed src="https://files.ros4.pro/integration.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="https://files.ros4.pro/integration.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></p>
+<h2 id="1-actions-s&#xE9;quentielles-de-la-cellule-robotique">1. Actions s&#xE9;quentielles de la cellule robotique</h2>
+<p>Les actions de la cellule robotique sont les suivantes :</p>
+<ol>
+<li>Le r&#xE9;seau de neurone a &#xE9;t&#xE9; entra&#xEE;n&#xE9; au pr&#xE9;alable sur les batchs MNIST avec <code>learn.py</code></li>
+<li>Le bras robotique prend une photo au dessus du feeder avec sa camera (&#xE9;tape &quot;scan&quot;)</li>
+<li>Cette photo est envoy&#xE9;e au serveur de vision <code>vision_server.py</code> qui va :
+3.1. extraire les contours carr&#xE9;s des cubes
+3.2. transmettre les imagettes rogn&#xE9;es selon leurs contours au r&#xE9;seau de neurones
+3.3. le r&#xE9;seau de neurone va effectuer une pr&#xE9;diction sur le label marqu&#xE9; &#xE0; la main 1 ou 2</li>
+<li>Le noeud de manipulation r&#xE9;cup&#xE8;re les coordonn&#xE9;es des cubes et leur label</li>
+<li>Pour chaque cube, il effectue un pick-and-place pour le positionner sur la remorque du Turtlebot. Le label est pass&#xE9; sur un param&#xE8;tre <code>/ros4pro/label</code></li>
+<li>Le Turtlebot lit ce param&#xE8;tre et se rend au conteneur 1 ou 2</li>
+<li>Il effectue une rotation de 360&#xB0; pour faire chuter le cube dans la zone de tri &#xE0; l&apos;aide du m&#xE2;t</li>
+</ol>
+<h2 id="2-comment-faire-">2. Comment faire ?</h2>
+<p>Selon votre avancement, vous n&apos;&#xEA;tes pas oblig&#xE9;s de suivre l&apos;ordre de travail ci-dessous. Il y a peut-&#xEA;tre un sujet plut&#xF4;t qu&apos;un autre o&#xF9; vous &#xEA;tes le plus en retard que vous devez rattraper.</p>
+<h3 id="21-le-ros-master">2.1 Le ROS master</h3>
+<p>Vous aurez d&#xE9;sormais 3 machines interconnect&#xE9;es : le robot roulant, le bras et votre station de travail. Donc pensez &#xE0; en d&#xE9;finir une comme ROS master et &#xE0; mettre &#xE0; jour tous les ROS_MASTER_URI. Nous vous conseillons d&apos;utiliser le bras comme ROS master car il est branch&#xE9; sur secteur et n&apos;est donc pas interrompu.</p>
+<p><strong>Attention aux conflits</strong> durant les tests puisque tout le monde aura le m&#xEA;me ROS master ! Avez-vous bien personnalis&#xE9; vos noms de robots lors de l&apos;introduction ? </p>
+<h3 id="22-le-serveur-de-param&#xE8;tres">2.2 Le serveur de param&#xE8;tres</h3>
+<p>Chaque ROS master d&#xE9;marre un serveur de param&#xE8;tre qui lui est propre pour y enregistrer des donn&#xE9;es sous forme de paires de cl&#xE9;s/valeurs, par exemple :</p>
+<pre><code>/robot1/simulated: True
+/robot2/simulated: False
+/robot1/speed: 1.0
+/robot2/speed: 1.2
+</code></pre><p>Similairement aux commandes <code>rostopic</code> et <code>rosservice</code> dans le terminal, la commande <code>rosparam</code> dispose d&apos;options pour interagir avec les param&#xE8;tres enregistr&#xE9;s sur le serveur, et les noms des param&#xE8;tres sont hierarchis&#xE9;s ave des <code>/</code> :</p>
+<ul>
+<li><code>rosparam list</code> : Lister les param&#xE8;tres du serveur</li>
+<li><code>rosparam get /frigo/fruit</code>: Consulter la valeur du param&#xE8;tre <code>/frigo/fruit</code></li>
+<li><code>rosparam set /frigo/fruit Banane</code>: D&#xE9;finir (ou &#xE9;craser) le param&#xE8;tre <code>/frigo/fruit</code> &#xE0; la nouvelle valeur <code>Banane</code></li>
+</ul>
+<p>C&#xF4;t&#xE9; Python, les noeuds peuvent &#xE9;galement d&#xE9;finir ou consulter des param&#xE8;tres avec les fonctions :</p>
+<ul>
+<li><code>rospy.get_param(&quot;/frigo/fruit&quot;)</code> : pour consulter</li>
+<li><code>rospy.set_param(&quot;/frigo/fruit&quot;, &quot;Banane&quot;)</code> : pour d&#xE9;finir ou &#xE9;craser</li>
+</ul>
+<h4 id="23-pr&#xE9;parer-la-navigation">2.3. Pr&#xE9;parer la navigation</h4>
+<p>Cr&#xE9;ez un nouveau noeud <code>navigate_integrate.py</code> similaire au noeud <code>navigate_waypoints.py</code> utilis&#xE9; le jour 2. Additionnellement, il devra attendre que le bras robotique ait d&#xE9;fini le param&#xE8;tre <code>/ros4pro/label</code> &#xE0; la valeur 1 ou 2 avant de d&#xE9;marrer la navigation vers le bac 1 ou le bac 2.</p>
+<p>Suivant la valeur du param&#xE8;tre, le robot va d&#xE9;poser le cube &#xE0; un des deux points. Trouvez les coordonn&#xE9;es de ces points sur la carte et &#xE9;crivez les dans le script <code>navigate_integrate.py</code>. Apr&#xE8;s avoir d&#xE9;pos&#xE9; le cube, le robot va recommencer et attendre de recevoir une nouvelle valeur.</p>
+<ul>
+<li>Enregistrez une nouvelle carte en partance de l&apos;endroit o&#xF9; le bras va d&#xE9;poser le cube (votre <strong>place</strong> pose)</li>
+<li>Prenez les coordonn&#xE9;es des points 1 et 2 dans le nouveau rep&#xE8;re d&#xE9;fini par la nouvelle carte, afin de les inscrire dans <code>navigate_integrate.py</code> </li>
+<li>Pr&#xE9;voyez le code pour effectuer des tours sur lui-m&#xEA;me au moment de faire chuter le cube dans le  bac</li>
+</ul>
+<p>Ce noeud a besoin de la navigation : <code>roslaunch turtlebot3_navigation turtlebot3_navigation.launch</code>
+Attendez que la navigation soit initialis&#xE9;e pour lancer le noeud : <code>rosrun ros4pro navigate_integrate.py</code></p>
+<h4 id="24-pr&#xE9;parer-la-vision">2.4. Pr&#xE9;parer la vision</h4>
+<p>Si vous n&apos;avez pas pris de retard la journ&#xE9;e Perception, vous disposez d&apos;un r&#xE9;seau de neurones fonctionnel.</p>
+<p>Nous allons le transformer en <strong>service ROS</strong> : on pourra lui faire une requ&#xEA;te <em>Quels sont les cubes que tu vois ?</em> et il r&#xE9;pondra en indiquant les cubes trouv&#xE9;s et leur label, le cas &#xE9;ch&#xE9;ant. Comme chaque service ROS est typ&#xE9;, nous allons utiliser le type existant <code>VisionPredict</code>, qui comprend, dans la requ&#xEA;te :</p>
+<ul>
+<li><code>image</code> : un objet de type <code>sensor_msgs/Image</code> correspondant &#xE0; l&apos;image dans laquelle chercher des cubes </li>
+</ul>
+<p>Dans la r&#xE9;ponse de ce service, il n&apos;y a que des listes, car elle comprend entre 0 et n cubes trouv&#xE9;s, qui ont chacun 1 label associ&#xE9;. La r&#xE9;ponse comprend donc :</p>
+<ul>
+<li><code>label</code> de type <code>std_msgs/UInt8[]</code> : la liste des labels de chaque cube trouv&#xE9;</li>
+<li><code>x_center</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es x des barycentres de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>y_center</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es y des barycentres de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>x1</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es x du coin haut gauche de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>y1</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es y du coin haut gauche de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>x2</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es x du coin haut droite de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>y2</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es y du coin haut droite de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>x3</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es x du coin bas droite de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>y3</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es y du coin bas droite de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>x4</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es x du coin bas gauche de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+<li><code>y4</code> de type <code>std_msgs/UInt32[]</code> : la liste des coordon&#xE9;es y du coin bas gauche de chaque cube (dans le rep&#xE8;re de la cam&#xE9;ra)</li>
+</ul>
+<p><strong>Note :</strong> Ainsi, pour chaque cube n&#xB0;i trouv&#xE9; dans la photo, <code>label[i]</code> est le label d&#xE9;tect&#xE9; par le r&#xE9;seau de neurones, et le point de coordonn&#xE9;es <code>(x_center[i], y_center[i])</code> est le barycentre de ce cube dans le rep&#xE8;re 2D de la cam&#xE9;ra  </p>
+<p>Avez l&apos;aide du <a href="http://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29" target="_blank">tutoriel &quot;Ecrire un service et client Python&quot;</a>, cr&#xE9;er un fichier <code>vision_server.py</code> qui fournit service <code>/ros4pro/vision/predict</code> et r&#xE9;pond, pour chaque requ&#xEA;te contenant une image, la liste des cubes et des labels qu&apos;il a trouv&#xE9;e.</p>
+<p>R&#xE9;alisez d&apos;abord script de test <code>rosrun ros4pro call_vision_service_example.py</code> qui sera le client qui va appeler ce service &#xE0; partir d&apos;une image de votre jeu de test. Cela permet de v&#xE9;rifier que votre mod&#xE8;le et votre entrainement pr&#xE9;dit de fa&#xE7;on suffisamment fiables les images du jeu de test. Sinon, v&#xE9;rifiez que vous avez bien respect&#xE9; les consignes de la journ&#xE9;e Perception et que votre r&#xE9;seau est entra&#xEE;n&#xE9; sur un nombre suffisamment &#xE9;lev&#xE9; d&apos;&#xE9;poques.</p>
+<p>R&#xE9;netra&#xEE;nez-le autant de fois que n&#xE9;cessaire pour disposer d&apos;un service fiable.</p>
+<h4 id="25-pr&#xE9;parer-la-manipulation">2.5. Pr&#xE9;parer la manipulation</h4>
+<p>Pour la manipulation, nous utiliserons le m&#xEA;me noeud <code>manipulate.py</code> que celui de la journ&#xE9;e Manipulation. Lorsqu&apos;on le d&#xE9;marre avec <code>roslaunch</code> on ajoutera l&apos;argument <code>vision</code> pour lui indiquer qu&apos;il doit faire appel au serveur de vision et donc au r&#xE9;seau de neurones plut&#xF4;t que d&apos;utiliser l&apos;emplacement vert pr&#xE9;d&#xE9;fini. C&apos;est &#xE0; dire :</p>
+<pre><code>roslaunch ros4pro manipulate.launch simulate:=false vision:=true
+</code></pre><h4 id="26-votre-scenario-fonctionne-t-il-">2.6. Votre scenario fonctionne-t-il ?</h4>
+<p>Pour &#xEA;tre consid&#xE9;r&#xE9; comme un succ&#xE8;s, votre cellule doit permettre de trier au moins 3 cubes de mani&#xE8;re compl&#xE8;tement autonome une fois que vous avez d&#xE9;marr&#xE9; les <code>roslaunch</code> et <code>rosrun</code> n&#xE9;cessaires.</p>
+<p>L&apos;objectif est que ce scenario de tri puisse fonctionner dans une cellule en production. Cependant vous constaterez de nombreux d&#xE9;fauts.</p>
+<p>Relevez et adressez un &#xE0; un ces d&#xE9;fauts pour am&#xE9;liorer le taux de succ&#xE8;s de votre cellule de tri.</p>
+<p><div id="page-footer" class="localized-footer"><hr><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cc-by-nc-sa_euro_icon.svg/120px-Cc-by-nc-sa_euro_icon.svg.png" alt="CC-BY-NC-SA"></a></p>
+<h4 id="&#x1F4DA;-auteurs">&#x1F4DA; Auteurs</h4>
+<p>Jessica Colombel (<a href="http://inria.fr/" target="_blank">Inria</a>), R&#xE9;mi Fabre (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Jean-Baptiste Horel (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Yoan Mollard (<a href="https://robot-enseirb-matmeca.fr/" target="_blank">Bordeaux INP</a>), Alexandre P&#xE9;r&#xE9; (<a href="https://flowers.inria.fr" target="_blank">Inria</a>), Steve N&apos;Guyen (<a href="https://www.labri.fr/" target="_blank">LaBRI</a>) .</p>
+<h4 id="&#x1F4AC;-besoin-daide-">&#x1F4AC; Besoin d&apos;aide ?</h4>
+<p>Posez votre question sur le <a href="https://discourse.ros.org/c/local/france/48" target="_blank">forum francophone des utilisateurs de ROS</a>.</p>
+<p>&#x1F4C5;  Derni&#xE8;re mise &#xE0; jour : 2021-01-03T19:14:24+01:00</p>
+<!-- Default to night theme -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" defer>
+$("div").first().addClass("color-theme-2");
+</script></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="../sawyer-tb-keras/" class="navigation navigation-next navigation-unique" aria-label="Next page: Sawyer + Turtlebot + Keras">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Poppy Ergo Jr + Turtlebot + Keras","level":"1.6.1","depth":2,"next":{"title":"Sawyer + Turtlebot + Keras","level":"1.6.2","depth":2,"path":"integration/sawyer-tb-keras/README.md","ref":"integration/sawyer-tb-keras/README.md","articles":[]},"previous":{"title":"V. Intégration","level":"1.6","depth":1,"ref":"","articles":[{"title":"Poppy Ergo Jr + Turtlebot + Keras","level":"1.6.1","depth":2,"path":"integration/ergo-tb-keras/README.md","ref":"integration/ergo-tb-keras/README.md","articles":[]},{"title":"Sawyer + Turtlebot + Keras","level":"1.6.2","depth":2,"path":"integration/sawyer-tb-keras/README.md","ref":"integration/sawyer-tb-keras/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","search-plus","github","anchorjs","build","custom-favicon","language-picker","localized-footer","embed-pdf"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/ros4pro/"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"embed-pdf":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ROS4PRO","language":"fr","gitbook":"*"},"file":{"path":"integration/ergo-tb-keras/README.md","mtime":"2021-01-03T18:14:24.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-03T18:20:09.115Z"},"basePath":"../..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

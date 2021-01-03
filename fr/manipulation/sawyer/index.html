@@ -1,0 +1,757 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Sawyer · ROS4PRO</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ur/README.md" />
+    
+    
+    <link rel="prev" href="../ergo-jr/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Qu'est-ce que c'est ?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../introduction/">
+            
+                <a href="../../introduction/">
+            
+                    
+                    I. Introduction à Linux et ROS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    II. Navigation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../navigation/turtlebot/">
+            
+                <a href="../../navigation/turtlebot/">
+            
+                    
+                    Turtlebot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    III. Manipulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../edo/">
+            
+                <a href="../edo/">
+            
+                    
+                    E.DO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../ergo-jr/">
+            
+                <a href="../ergo-jr/">
+            
+                    
+                    Poppy Ergo Jr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Sawyer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../ur/README.md">
+            
+                <span>
+            
+                    
+                    Universal Robot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    IV. Perception
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../perception/opencv/">
+            
+                <a href="../../perception/opencv/">
+            
+                    
+                    OpenCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../perception/keras/">
+            
+                <a href="../../perception/keras/">
+            
+                    
+                    Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../perception/pytorch/">
+            
+                <a href="../../perception/pytorch/">
+            
+                    
+                    Torch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    V. Intégration
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../integration/ergo-tb-keras/">
+            
+                <a href="../../integration/ergo-tb-keras/">
+            
+                    
+                    Poppy Ergo Jr + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../integration/sawyer-tb-keras/">
+            
+                <a href="../../integration/sawyer-tb-keras/">
+            
+                    
+                    Sawyer + Turtlebot + Keras
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../theory/">
+            
+                <a href="../../theory/">
+            
+                    
+                    VI. Robotique théorique
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    VII. Simulation
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../simulation/gazebo/">
+            
+                <a href="../../simulation/gazebo/">
+            
+                    
+                    Gazebo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Foires aux Questions
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../faq/pi/">
+            
+                <a href="../../faq/pi/">
+            
+                    
+                    FAQ robots basés sur Raspberry Pi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Sawyer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="iii-robotique-de-manipulation-avec-sawyer">III. Robotique de manipulation avec Sawyer</h1>
+<p>La robotique de manipulation regroupe la manipulation d&apos;objets avec des robots : des bras articul&#xE9;s &#xE0; 5 ou 6 axes, les robots <a href="https://en.wikipedia.org/wiki/SCARA" target="_blank">SCARA</a> (Selective Compliance Assembly Robot Arm), les robots <a href="https://en.wikipedia.org/wiki/Cartesian_coordinate_robot" target="_blank">cart&#xE9;siens</a> (lin&#xE9;aires), les robots <a href="https://en.wikipedia.org/wiki/Parallel_manipulator" target="_blank">parall&#xE8;les</a> ... Dans ce TP nous utilisons un robot Sawyer du fabriquant Rethink Robotics.</p>
+<h2 id="pr&#xE9;requis">Pr&#xE9;requis</h2>
+<ul>
+<li>BAC+2 et +</li>
+<li>Aisance en Python et commandes dans un terminal</li>
+<li>Aisance en g&#xE9;om&#xE9;trie 3D</li>
+<li>Le <a href="../introduction">TP d&apos;introduction</a></li>
+</ul>
+<h2 id="diapositives">Diapositives</h2>
+<p><div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="https://files.ros4.pro/manipulation.pdf">View PDF</a></div>
+                
+                                <object data="https://files.ros4.pro/manipulation.pdf" width="100%" height="565px" type="application/pdf">
+                                    <embed src="https://files.ros4.pro/manipulation.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="https://files.ros4.pro/manipulation.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></p>
+<h2 id="1-documentation">1. Documentation</h2>
+<h3 id="11-les-liens">1.1. Les liens</h3>
+<ul>
+<li><a href="https://ros-planning.github.io/moveit_tutorials/" target="_blank">Tutoriaux de MoveIt</a></li>
+<li><a href="https://github.com/ros-planning/moveit/tree/master/moveit_commander/src/moveit_commander" target="_blank">Code du MoveIt Commander Python</a></li>
+<li><a href="http://docs.ros.org/melodic/api/moveit_python/html/namespacemoveit__python.html" target="_blank">Documentation de l&#x2019;API MoveIt en Python</a></li>
+<li><a href="https://sdk.rethinkrobotics.com/intera/Tutorials" target="_blank">Tutoriaux du SDK Sawyer</a></li>
+</ul>
+<h3 id="12-le-plus-important">1.2. Le plus important</h3>
+<p>Voici les quelques fonctions les plus importantes traduites depuis la documentation.</p>
+<h4 id="121-d&#xE9;clarer-un-commandeur-de-robot">1.2.1. D&#xE9;clarer un commandeur de robot</h4>
+<pre><code>commander = MoveGroupCommander(&quot;right_arm&quot;)
+</code></pre><p>Ce commandeur est celui qui identifie notre robot et permettra d&apos;en prendre le contr&#xF4;le.</p>
+<h4 id="122-ex&#xE9;cuter-un-mouvement-vers-une-cible">1.2.2. Ex&#xE9;cuter un mouvement vers une cible</h4>
+<p>D&#xE9;finir une cible, dans l&apos;espace des joints :</p>
+<pre><code>commander.set_joint_value_target([-1.0, -2.0, 2.8, 1.5, 0.1, -0.3, 3.0])
+</code></pre><p>Les 7 valeurs sont les angles cibles des 7 joints en radians
+Attention : les cibles dans l&apos;espace des joints n&apos;auront pas d&apos;&#xE9;vitement de collisions</p>
+<p>Ou bien d&#xE9;finir une cible dans l&apos;espace cart&#xE9;sien :</p>
+<pre><code>commander.set_pose_target([0.5, 0.05, 1.1, 0, 0, 0, 1])
+</code></pre><p>Les 7 valeurs sont la <strong>position</strong> et l&apos;<em>orientation</em> [<strong>x, y, z</strong>, <em>qx, qy, qz, qw</em>] cible de l&apos;effecteur dans le rep&#xE8;re <code>base</code></p>
+<h4 id="123-planifier--ex&#xE9;cuter-le-mouvement-vers-la-cible">1.2.3. Planifier &amp; ex&#xE9;cuter le mouvement vers la cible</h4>
+<p>La fonction &quot;go&quot; d&#xE9;clenche le calcul de trajectoire et l&apos;ex&#xE9;cution instantan&#xE9;e si le calcul a r&#xE9;ussi :</p>
+<pre><code>commander.go()
+</code></pre><h3 id="124-ex&#xE9;cuter-une-trajectoire-cart&#xE9;sienne">1.2.4. Ex&#xE9;cuter une trajectoire cart&#xE9;sienne</h3>
+<p>Par opposition &#xE0; la cible cart&#xE9;sienne, dans cet exemple au lieu de ne d&#xE9;finir qu&apos;une cible finale, on demande &#xE0; MoveIt de suivre une trajectoire rectiligne dans l&apos;espace cart&#xE9;sien. Cette trajectoire est pr&#xE9;calcul&#xE9;e en entier gr&#xE2;ce &#xE0; la fonction <code>commander.compute_cartesian_path([pose1, pose2]), resolution, jump)</code>
+o&#xF9; :</p>
+<ul>
+<li><code>[pose1, pose2]</code> est la liste des points &#xE0; suivre de mani&#xE8;re rectiligne de type <code>geometry_msgs.Pose</code></li>
+<li><code>resolution</code> est la distance en m&#xE8;tre entre 2 points cart&#xE9;siens g&#xE9;n&#xE9;r&#xE9;s (par exemple <code>0.01</code> pour g&#xE9;n&#xE9;rer un point tous les centim&#xE8;tres)</li>
+<li><code>jump</code> est le seuil maximal autoris&#xE9; au del&#xE0; duquel un saut trop important entre 2 positions angulaires en radians ne sera pas ex&#xE9;cut&#xE9;e car il demanderait une vitesse excessive. <code>jump</code> est la somme des seuils sur tous les joints (par exemple <code>3.14</code>).</li>
+</ul>
+<p>La fonction <code>commander.compute_cartesian_path(...)</code> renvoie :</p>
+<ul>
+<li><code>trajectory</code>: la trajectoire cart&#xE9;sienne calcul&#xE9;e</li>
+<li><code>ratio</code>: Un ratio entre 0 et 1 indique la quantit&#xE9; de la trajectoire qui a pu &#xEA;tre calcul&#xE9;e avec succ&#xE8;s sans g&#xE9;n&#xE9;rer de saut. Un ratio inf&#xE9;rieur &#xE0; 0.95 signifie probablement que la trajectoire est inutilisble car elle ne suit pas le chemin demand&#xE9;. </li>
+</ul>
+<p>Par exemple, &#xE9;tant donn&#xE9;es 2 points <code>p1</code> et <code>p2</code> de type <code>geometry_msgs.Pose</code>, cet appel est valide :</p>
+<pre><code>trajectory, ratio = commander.compute_cartesian_path([pose1, pose2]), 0.01, 3.14)
+</code></pre><p>Enfin, ex&#xE9;cuter la trajectoire, uniquement si le ratio indique au moins 95% de succ&#xE8;s :</p>
+<pre><code>commander.execute(trajectory)
+</code></pre><h4 id="125-d&#xE9;finir-des-objets-de-collision">1.2.5. D&#xE9;finir des objets de collision</h4>
+<p>Lorsqu&apos;on ajoute des objets de collision, les appels &#xE0; <code>go()</code> dans l&apos;espace cart&#xE9;sien planifieront, si possible, une trajectoire en &#xE9;vitant les objets d&#xE9;clar&#xE9;s comme objets de collision.</p>
+<p>La sc&#xE8;ne de planification est notre interface pour ajouter ou supprimer des objets de collision :</p>
+<pre><code>scene = PlanningSceneInterface()
+</code></pre><p>On peut ensuite effectuer les ajouts ou suppressions. Par exemple, on ajoute un objet de collision cubique de taille 10x8x2 cm &#xE0; la position [1.2, 0.5, 0.55] et avec l&apos;orientation [0, 0, 0, 1] (= rotation identit&#xE9;) dans le rep&#xE8;re <code>base</code>:  </p>
+<pre><code>ps = PoseStamped()
+ps.header.frame_id = &quot;base&quot;
+ps.pose.position.x = 1.2
+ps.pose.position.y = 0.5
+ps.pose.position.z = 0.55
+ps.pose.orientation.x = 0
+ps.pose.orientation.y = 0
+ps.pose.orientation.z = 0
+ps.pose.orientation.w = 1
+scene.add_box(&quot;ma_boite&quot;, list_to_pose_stamped2([[1.2, 0.5, 0.55], [0, 0, 0, 1]]), (0.10, 0.08, 0.02))
+</code></pre><p>Les objets de collision apparaissent en vert dans RViz s&apos;ils sont d&#xE9;finis correctement.</p>
+<p>Note: apr&#xE8;s une modification de la sc&#xE8;ne, est g&#xE9;n&#xE9;ralement utile de faire une pause <code>rospy.sleep(1)</code> afin de laisser le temps &#xE0; la sc&#xE8;ne d&apos;&#xEA;tre mise &#xE0; jour sur tout le syst&#xE8;me avant toute nouvelle planification de trajectoire</p>
+<h2 id="2-travaux-pratiques">2. Travaux pratiques</h2>
+<h3 id="21-utiliser-moveit-dans-le-visualisateur-rviz">2.1. Utiliser MoveIt dans le visualisateur Rviz</h3>
+<p>Avec roslaunch, lancer <code>sawyer_moveit.launch</code> provenant du package <code>sawyer_moveit_config</code>:</p>
+<pre><code>roslaunch sawyer_moveit_config sawyer_moveit.launch
+</code></pre><p>Via l&#x2019;interface graphique, changer l&#x2019;orientation et la position de l&#x2019;effecteur puis demander &#xE0; MoveIt de planifier et ex&#xE9;cuter une trajectoire pour l&#x2019;atteindre.</p>
+<ul>
+<li><p>Cochez la bonne r&#xE9;ponse : Cette m&#xE9;thode permet-elle de d&#xE9;finir une cible dans l&#x2019;espace : &#x25FB; cart&#xE9;sien &#x25FB; des joints</p>
+</li>
+<li><p>Trois robots semblent superpos&#xE9;s en 3D, quelles sont leurs diff&#xE9;rences :</p>
+<ul>
+<li>Le robot orange est ... ?</li>
+<li>Le robot rapide est ... ?</li>
+<li>Le robot lent est ... ?</li>
+</ul>
+</li>
+<li><p>Utilisez <code>rostopic echo</code> pour afficher en temps r&#xE9;el les messages du topic <code>/robot/joint_states</code>. Ex&#xE9;cutez un mouvement et observer les valeurs changer. Que repr&#xE9;sente le topic /robot/joint_states ? </p>
+</li>
+<li><p>Indiquez comment se nomment les 7 joints de Sawyer depuis la base jusqu&#x2019;&#xE0; l&#x2019;effecteur :</p>
+<ul>
+<li>Premier joint :</li>
+<li>Deuxi&#xE8;me joint :</li>
+<li>Troisi&#xE8;me joint :</li>
+<li>Quatri&#xE8;me joint :</li>
+<li>Cinqui&#xE8;me joint :</li>
+<li>Sixi&#xE8;me joint :</li>
+<li>Dernier joint :</li>
+</ul>
+</li>
+</ul>
+<h3 id="22-utiliser-moveit-via-son-client-python">2.2. Utiliser MoveIt via son client Python</h3>
+<p>Dans le package <code>ros4pro</code>, ouvrir le n&#x153;ud <code>manipulate.py</code>. Rep&#xE9;rez les 3 exemples :</p>
+<ul>
+<li>d&apos;ex&#xE9;cution d&apos;une trajectoire cart&#xE9;sienne</li>
+<li>de planification vers une cible cart&#xE9;sienne</li>
+<li>de planification vers une cible dans l&apos;espace des joints</li>
+</ul>
+<p>Durant la suite du TP, nous d&#xE9;marrerons notre programme de manipulation avec le launchfile <code>manipulate.launch</code> du package <code>ros4pro</code> qui fonctionne par d&#xE9;faut en mode simul&#xE9;, &#xE0; savoir :</p>
+<pre><code>roslaunch ros4pro manipulate.launch
+</code></pre><p>Celui-ci d&#xE9;marre automatiquement <code>manipulate.py</code>, il est donc inutile de le d&#xE9;marrer par un autre moyen.</p>
+<h4 id="221-modifier-la-sc&#xE8;ne-de-planification">2.2.1. Modifier la sc&#xE8;ne de planification</h4>
+<p>La sc&#xE8;ne repr&#xE9;sente tout ce qui rentre en compte dans les mouvements du robot et qui n&#x2019;est pas le robot lui-m&#xEA;me : les obstacles et/ou les objets &#xE0; attraper. Ces &#xE9;l&#xE9;ments sont d&#xE9;clar&#xE9;s &#xE0; MoveIt comme des objets de collision (d&#xE9;tach&#xE9;s du robot ou attach&#xE9;s c&#x2019;est-&#xE0;-dire qu&#x2019;ils bougent avec lui).</p>
+<ul>
+<li><p>Prenez les mesures du feeder puis d&#xE9;clarez-les comme objets de collision dans votre noeud Python via l&#x2019;interface <code>PlanningSceneInterface</code>. Compl&#xE9;tez le TODO associ&#xE9; &#xE0; la question 3.2.1. dans <code>manipulate.py</code>.</p>
+</li>
+<li><p>Planifiez et ex&#xE9;cutez un mouvement RViz pour v&#xE9;rifier que les collisions sont &#xE9;vit&#xE9;es. D&#xE9;clarez un nouvel obstacle qui entrave forc&#xE9;ment le chemin du robot et v&#xE9;rifiez. V&#xE9;rifiez ce qu&#x2019;il se passe lorsque le planner ne trouve aucune solution.</p>
+</li>
+</ul>
+<h4 id="222-effectuer-un-pick-and-place-avec-un-cube-simul&#xE9;-optionnel">2.2.2. Effectuer un pick-and-place avec un cube simul&#xE9; (optionnel)</h4>
+<p>Nous consid&#xE9;rons un cube situ&#xE9; &#xE0; la pose <code>&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#xA700;&#x1D64;&#x2086;&#x2091;</code> <code>&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#xA700;&#x1D64;&#x2086;&#x2091;_&#x1D65;&#x2091;&#x1D63;&#x209C; = [[0.32, 0.52, 0.32], [1, 0, 0, 0]]</code>, ce qui correspond exactement &#xE0; l&apos;emplacement entour&#xE9; en vert sur le feeder.</p>
+<p>Pour l&#x2019;approche, on positionnera le gripper 18cm au dessus du cube le long de son axe z.</p>
+<ul>
+<li>Sachant cela, d&#xE9;duire la matrice de transformation <code>&#x1D9C;&#x1D58;&#x1D47;&#x1D49;P&#x2089;&#x1D63;&#x1D62;&#x209A;&#x209A;&#x2091;&#x1D63;</code> en notation <code>[[x, y, z], [x, y, z, w]]</code> ?</li>
+<li>Exprimez <code>&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#x2089;&#x1D63;&#x1D62;&#x209A;&#x209A;&#x2091;&#x1D63;</code> en fonction de la pose <code>&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#xA700;&#x1D64;&#x2086;&#x2091;</code> du cube dans le rep&#xE8;re <code>base</code> via une multiplication matricielle</li>
+</ul>
+<p>Ensuite, dans votre code :</p>
+<ul>
+<li>Inventez un cube en simulation dans votre code &#xE0; la pose <code>&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#xA700;&#x1D64;&#x2086;&#x2091;_&#x1D65;&#x2091;&#x1D63;&#x209C; = [[0.32, 0.52, 0.32], [1, 0, 0, 0]]</code> c&#x2019;est-&#xE0;-dire &#xE0; la surface du feeder. Pour ce faire utilisez :<ul>
+<li>l&#x2019;interface <code>PlanningSceneInterface</code> pour ajouter, supprimer un cube ou l&#x2019;attacher &#xE0; l&#x2019;effecteur <code>right_gripper_tip</code> du robot</li>
+<li><code>TransformBroadcaster</code> pour publier la frame tf nomm&#xE9;e <code>cube</code> au centre du cube &#xE0; attraper</li>
+</ul>
+</li>
+</ul>
+<h4 id="223-g&#xE9;n&#xE9;rer-les-4-trajectoires-du-pick-and-place">2.2.3. G&#xE9;n&#xE9;rer les 4 trajectoires du pick-and-place</h4>
+<p>Pour rappel, voici les 4 &#xE9;tapes d&apos;un pick pour attraper et relacher le cube simul&#xE9; :</p>
+<pre><code>1. trajectoire d&#x2019;approche : aller sans collision &#xE0; `&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#xA700;&#x1D64;&#x2086;&#x2091;_&#x1D65;&#x2091;&#x1D63;&#x209C;` c&apos;est &#xE0; dire 18cm au dessus du cube sur son axe z (axe bleu)
+2. trajectoire de descente : suivre une trajectoire cart&#xE9;sienne de 50 points descendant le long de l&apos;axe z pour atteindre  `&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#xA700;&#x1D64;&#x2086;&#x2091;_&#x1D65;&#x2091;&#x1D63;&#x209C;`  avec l&#x2019;effecteur `right_gripper_tip`. Puis fermer l&apos;effecteur.
+3. trajectoire de retraite : retourner au point d&#x2019;approche par une trajectoire cart&#xE9;sienne
+4. trajectoire de d&#xE9;pose : si le cube a bel-et-bien &#xE9;t&#xE9; attrap&#xE9; avec succ&#xE8;s, aller sans collision au point de d&#xE9;pose `&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#xA700;&#x2094;&#x2091;&#x209A;&#x2092;&#x209B;&#x2091; = [[0.5, 0, 0.1], [0.707, 0.707, 0, 0]]`
+</code></pre><ul>
+<li><p>Dans <code>manipulate.py</code>, les deux derni&#xE8;res trajectoires sont incompl&#xE8;tes : retraite et d&#xE9;pose nomm&#xE9;es <code>release</code> et <code>place</code>. Compl&#xE9;ter les 2 TODO associ&#xE9;s &#xE0; la question 3.2.3 dans <code>manipulate.py</code></p>
+</li>
+<li><p>V&#xE9;rifier que votre pick-and-place a l&apos;air correct <strong>en simulation d&apos;abord</strong> et que vous distinguez correctement <strong>les 4 &#xE9;tapes du pick-and-place</strong>.</p>
+</li>
+</ul>
+<h3 id="23-ex&#xE9;cutez-le-pick-and-place-sur-le-sawyer-r&#xE9;el">2.3. Ex&#xE9;cutez le pick-and-place sur le Sawyer r&#xE9;el</h3>
+<ul>
+<li>Changez votre rosmaster pour celui de Sawyer :<pre><code>export ROS_MASTER_URI=http://021608CP00013.local:11311
+</code></pre></li>
+<li><p>Le centre du cube <code>&#x1D47;&#x1D43;&#x2E2;&#x1D49;P&#xA700;&#x1D64;&#x2086;&#x2091;_&#x1D65;&#x2091;&#x1D63;&#x209C;</code> pr&#xE9;c&#xE9;dent est celui de la zone verte sur le feeder. V&#xE9;rifiez que votre pick-and-place fonctionne avec 1 seul cube &#xE0; l&#x2019;emplacement vert.</p>
+</li>
+<li><p>Pour commander le robot r&#xE9;el modifiez le param&#xE8;tre <code>simulate</code> :</p>
+<pre><code>roslaunch ros4pro manipulate.launch simulate:=false
+</code></pre></li>
+</ul>
+<p>Vous devriez constater que votre pick-and-place fonctionne parfois et qu&apos;il &#xE9;choue dans certaines situations.</p>
+<h3 id="24-pr&#xE9;parer-le-pipeline-du-scenario-final-optionnel">2.4. Pr&#xE9;parer le pipeline du scenario final (optionnel)</h3>
+<p>Ajoutez &#xE0; <code>manipulate.py</code> le code n&#xE9;cessaire pour votre scenario final :</p>
+<ul>
+<li><strong>Prise de photo (scan)</strong> :<ul>
+<li>positionner l&#x2019;effecteur de telle mani&#xE8;re que  &#xAB; right_hand_camera &#xBB; se trouve &#xE0; la verticale du feeder</li>
+<li>R&#xE9;cup&#xE9;rer l&#x2019;image rectifi&#xE9;e sur le topic d&#xE9;di&#xE9; :<ul>
+<li>image_view peut aider &#xE0; visualiser l&#x2019;image pour d&#xE9;boguer dans un terminal</li>
+<li>pour r&#xE9;cup&#xE9;rer l&#x2019;image en Python, impl&#xE9;mentez un Subscriber. Cette photo sera envoy&#xE9;e au r&#xE9;seau de neurones lorsqu&#x2019;il sera impl&#xE9;ment&#xE9;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Pick-and-Place successifs</strong> : Effectuez 3 pick-and-place successifs sans intervention humaine  de 3 cubes dont la position est connue &#xE0; l&#x2019;avance. Ces positions seront retourn&#xE9;es par le r&#xE9;seau de neurones lorsqu&#x2019;il sera impl&#xE9;ment&#xE9;</li>
+<li>Si vous n&#x2019;avez pas de collision de mani&#xE8;re reproductible, vous pouvez acc&#xE9;l&#xE9;rer les vitesses dans sawyer_moveit_config/config/joint_limits.yaml (pas les acc&#xE9;l&#xE9;rations)</li>
+</ul>
+<h3 id="25-pr&#xE9;venir-les-&#xE9;checs-de-planification">2.5. Pr&#xE9;venir les &#xE9;checs de planification</h3>
+<p>Le path-planning &#xE9;tant r&#xE9;alis&#xE9; pendant l&#x2019;ex&#xE9;cution et non pr&#xE9;calcul&#xE9;, il est possible que MoveIt ne trouve aucune solution de mouvement. Pour rem&#xE9;dier &#xE0; cela, plusieurs pistes s&#x2019;offrent &#xE0; nous :</p>
+<ul>
+<li>R&#xE9;essayer encore et encore &#x2026; b&#xEA;tement, jusqu&#x2019;&#xE0; un potentiel succ&#xE8;s</li>
+<li>Planifier toute les trajectoires d&#x2019;un coup avant ex&#xE9;cution, si l&#x2019;une ne peut &#xEA;tre calcul&#xE9;e, reg&#xE9;n&#xE9;rer la pr&#xE9;c&#xE9;dente et recommencer. Cela montre ses limites : et si le robot n&#x2019;est pas &#xE0; l&#x2019;emplacement attendu entre deux trajectoires, par exemple si l&#x2019;op&#xE9;rateur l&#x2019;a boug&#xE9; manuellement ?</li>
+<li><strong>Fournir une &#xAB; seed &#xBB; &#xE0; l&#x2019;IK ou au path-planning</strong>. Cette solution est approfondie ci-apr&#xE8;s :</li>
+</ul>
+<p>MoveIt poss&#xE8;de un syst&#xE8;me de calcul de la <strong>g&#xE9;om&#xE9;trie directe et inverse</strong>, respectivement via les services <code>/compute_fk</code> et <code>/compute_ik</code>.
+Observer les types de service (<code>rosservice info</code>) et le contenu de la requ&#xEA;te (<code>rossrv show</code>) puis appeler ces deux services sur ces deux exemples :</p>
+<ul>
+<li>Calculer la FK pour les angles <code>-&#x3C0;/2, &#x3C0;/2, -&#x3C0;/2, 0, 0, 0, 0</code>. Donner le r&#xE9;sultat au format <code>[[x, y, z,], [qx, qy, qz, qw]]</code></li>
+<li>Calculer l&#x2019;IK pour la position d&#x2019;effecteur <code>[[0.5, 0, 0.1], [0.707, 0.707, 0, 0]]</code>. Donner le r&#xE9;sultat au format <code>[angle1, angle2, angle3, angle4, angle5, angle6, angle7]</code></li>
+</ul>
+<p>R&#xE9;ex&#xE9;cutez le m&#xEA;me calcul d&#x2019;IK sur la m&#xEA;me position d&#x2019;effecteur, une seconde puis une troisi&#xE8;me fois. Observez que le r&#xE9;sultat est diff&#xE9;rent. Pourquoi ?</p>
+<ul>
+<li>Fournissez une &#xAB; seed &#xBB; au format <code>[angle1, angle2, angle3, angle4, angle5, angle6, angle7]</code> de votre choix &#xE0; l&#x2019;IK pour influencer le r&#xE9;sultat.</li>
+<li>Quelle seed proposez-vous pour maximiser les chances de succ&#xE8;s du path-planning ?</li>
+</ul>
+<p><div id="page-footer" class="localized-footer"><hr><p><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/fr/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cc-by-nc-sa_euro_icon.svg/120px-Cc-by-nc-sa_euro_icon.svg.png" alt="CC-BY-NC-SA"></a></p>
+<h4 id="&#x1F4DA;-auteurs">&#x1F4DA; Auteurs</h4>
+<p>Jessica Colombel (<a href="http://inria.fr/" target="_blank">Inria</a>), R&#xE9;mi Fabre (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Jean-Baptiste Horel (<a href="https://robotics.catie.fr/" target="_blank">CATIE</a>), Yoan Mollard (<a href="https://robot-enseirb-matmeca.fr/" target="_blank">Bordeaux INP</a>), Alexandre P&#xE9;r&#xE9; (<a href="https://flowers.inria.fr" target="_blank">Inria</a>), Steve N&apos;Guyen (<a href="https://www.labri.fr/" target="_blank">LaBRI</a>) .</p>
+<h4 id="&#x1F4AC;-besoin-daide-">&#x1F4AC; Besoin d&apos;aide ?</h4>
+<p>Posez votre question sur le <a href="https://discourse.ros.org/c/local/france/48" target="_blank">forum francophone des utilisateurs de ROS</a>.</p>
+<p>&#x1F4C5;  Derni&#xE8;re mise &#xE0; jour : 2021-01-03T19:14:24+01:00</p>
+<!-- Default to night theme -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" defer>
+$("div").first().addClass("color-theme-2");
+</script></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../ergo-jr/" class="navigation navigation-prev " aria-label="Previous page: Poppy Ergo Jr">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ur/README.md" class="navigation navigation-next " aria-label="Next page: Universal Robot">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Sawyer","level":"1.4.3","depth":2,"next":{"title":"Universal Robot","level":"1.4.4","depth":2,"path":"manipulation/ur/README.md","ref":"manipulation/ur/README.md","articles":[]},"previous":{"title":"Poppy Ergo Jr","level":"1.4.2","depth":2,"path":"manipulation/ergo-jr/README.md","ref":"manipulation/ergo-jr/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","search-plus","github","anchorjs","build","custom-favicon","language-picker","localized-footer","embed-pdf"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/ros4pro/"},"localized-footer":{"filename":"FOOTER.md","hline":"true"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"build":{"args":[],"bin":"pandoc","format":"latex","opts":{},"output":"_book/main.tex","template":"_layouts/main.tex"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"embed-pdf":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ROS4PRO","language":"fr","gitbook":"*"},"file":{"path":"manipulation/sawyer/README.md","mtime":"2021-01-03T18:14:24.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-03T18:20:09.115Z"},"basePath":"../..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
